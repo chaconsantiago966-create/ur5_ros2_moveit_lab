@@ -1,0 +1,8 @@
+digital_io_sim:
+  ros__parameters:
+    num_inputs: 4
+    num_outputs: 4
+    auto_cell: true          # false -> entradas manuales por servicio
+    part_arrival_delay: 2.0
+    ack_delay: 1.5
+    initial_inputs_on: [2]   # DI2 = zona de descarga libre

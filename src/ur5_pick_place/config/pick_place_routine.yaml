@@ -1,0 +1,62 @@
+# Rutina Pick & Place - UR5 + gripper simple
+# Puntos de interés en espacio articular [rad]:
+# [shoulder_pan, shoulder_lift, elbow, wrist_1, wrist_2, wrist_3]
+# Calculados por cinemática inversa (TCP = tool0_tcp, herramienta hacia abajo)
+# y verificados con tf2_echo world tool0_tcp en Gazebo.
+pick_place_node:
+  ros__parameters:
+    use_action: true          # false -> usa el tópico joint_trajectory
+    cycles: 2
+    default_move_time: 3.0
+    gripper_open: 0.04
+    gripper_close: 0.02       # pieza de 4 cm -> dedos a 2 cm del centro
+    part_size: 0.04
+    stations:
+      pick:  [0.45, 0.25, 0.12]    # TCP sobre la pieza (x, y, z) [m]
+      place: [0.45, -0.30, 0.12]
+
+    point_names: [home, pick_approach, pick, inspect, place_approach, place]
+    points:
+      home:           [0.0,   -1.57,  1.57,  -1.57,  -1.57, 0.0]
+      pick_approach:  [0.293, -1.532, 1.485, -1.524, -1.571, 1.864]   # (0.45, 0.25, 0.30)
+      pick:           [0.293, -1.453, 1.870, -1.988, -1.571, 1.864]   # (0.45, 0.25, 0.12)
+      inspect:        [1.326, -1.674, 1.494, -1.390, -1.571, 2.897]   # (0.00, 0.45, 0.35)
+      place_approach: [-0.791,-1.469, 1.417, -1.519, -1.571, 0.780]   # (0.45,-0.30, 0.30)
+      place:          [-0.791,-1.394, 1.801, -1.978, -1.571, 0.780]   # (0.45,-0.30, 0.12)
+
+    # Pasos:  move:<punto>[@segundos] | gripper:open|close | message:<texto>
+    #         wait_input:<n>=ON|OFF  | set_output:<n>=ON|OFF | wait:<s>
+    #         spawn_part | attach | detach   (solo visualización en RViz)
+    step_list:
+      - "message:Inicio de ciclo - robot a HOME"
+      - "move:home@3"
+      - "gripper:open"
+      - "message:Encendiendo banda transportadora (DO0)"
+      - "set_output:0=ON"
+      - "message:Esperando pieza en estación PICK (DI0)"
+      - "wait_input:0=ON"
+      - "spawn_part"
+      - "set_output:0=OFF"
+      - "move:pick_approach@3"
+      - "message:Aproximación a PICK - descendiendo"
+      - "move:pick@2"
+      - "gripper:close"
+      - "attach"
+      - "message:Pieza sujeta"
+      - "move:pick_approach@2"
+      - "move:inspect@3"
+      - "message:Punto de inspección - pieza OK"
+      - "wait:1.0"
+      - "move:place_approach@3"
+      - "message:Esperando zona de descarga libre (DI2)"
+      - "wait_input:2=ON"
+      - "move:place@2"
+      - "gripper:open"
+      - "detach"
+      - "message:Pieza depositada - avisando al PLC (DO1)"
+      - "set_output:1=ON"
+      - "wait_input:1=ON"
+      - "message:PLC confirmó (DI1) - liberando DO1"
+      - "set_output:1=OFF"
+      - "move:place_approach@2"
+      - "move:home@3"
