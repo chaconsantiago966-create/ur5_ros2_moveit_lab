@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur">
+
+  <!-- Include ONLY the base robot -->
+<xacro:include
+    filename="$(find ur5_robotiq_description)/urdf/ur_with_gripper_base.urdf.xacro"/>
+
+<link name="world"/>
+
+<joint name="world_to_base" type="fixed">
+  <parent link="world"/>
+  <child link="base_link_parent"/>
+  <origin xyz="0 0 0" rpy="0 0 0"/>
+</joint>
+
+</robot>

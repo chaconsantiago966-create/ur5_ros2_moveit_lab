@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="$(arg name)">
+
+  <!-- Arguments -->
+  <xacro:arg name="name" default="ur"/>
+  <xacro:arg name="simulation_controllers" default=""/>
+  <xacro:arg name="ros_namespace" default=""/>
+
+  <!-- Include base robot -->
+  <xacro:include filename="$(find ur5_robotiq_description)/urdf/ur_with_gripper_base.urdf.xacro"/>
+
+  <!-- World -->
+  <link name="world"/>
+
+  <!-- Ground plane -->
+  <link name="ground_plane">
+    <visual>
+      <geometry><box size="5 5 0"/></geometry>
+      <material name="ground_white"><color rgba="1 1 1 0.5"/></material>
+    </visual>
+    <collision>
+      <geometry><box size="5 5 0"/></geometry>
+    </collision>
+  </link>
+
+  <joint name="ground_plane_joint" type="fixed">
+    <parent link="world"/>
+    <child link="ground_plane"/>
+    <origin xyz="0 0 -0.01" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Mount robot on world -->
+  <joint name="base_mount" type="fixed">
+    <parent link="world"/>
+    <child link="base_link_parent"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Gazebo ros2_control plugin -->
+  <gazebo>
+    <plugin filename="libgz_ros2_control-system.so"
+            name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+      <parameters>$(arg simulation_controllers)</parameters>
+      <ros><namespace>$(arg ros_namespace)</namespace></ros>
+    </plugin>
+  </gazebo>
+
+  <!-- ros2_control joints -->
+  <!-- OVERRIDE ros2_control: arm + gripper + hardware plugin -->
+  <ros2_control name="$(arg name)" type="system">
+
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <!-- UR arm joints -->
+    <joint name="shoulder_pan_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="shoulder_lift_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="elbow_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_1_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_2_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_3_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- Gripper joints -->
+  <joint name="gripper_finger_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  <joint name="right_finger_joint">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+
+  </ros2_control>
+
+</robot>

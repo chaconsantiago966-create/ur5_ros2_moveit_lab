@@ -1,0 +1,160 @@
+```xml
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="$(arg name)">
+
+  <!-- ========================================================= -->
+  <!-- Arguments                                                -->
+  <!-- ========================================================= -->
+
+  <xacro:arg name="name" default="ur"/>
+  <xacro:arg name="simulation_controllers" default=""/>
+  <xacro:arg name="ros_namespace" default=""/>
+
+  <!-- ========================================================= -->
+  <!-- Base robot: UR5 + Robotiq 2F-85 geometry                  -->
+  <!-- The base Xacro must disable the gripper's own ros2_control -->
+  <!-- declaration so that control interfaces are declared here. -->
+  <!-- ========================================================= -->
+
+  <xacro:include
+      filename="$(find ur5_robotiq_description)/urdf/ur_with_gripper_base.urdf.xacro"/>
+
+  <!-- ========================================================= -->
+  <!-- World and ground plane                                    -->
+  <!-- ========================================================= -->
+
+  <link name="world"/>
+
+  <link name="ground_plane">
+    <visual>
+      <geometry>
+        <box size="5 5 0.02"/>
+      </geometry>
+      <material name="ground_white">
+        <color rgba="1 1 1 0.5"/>
+      </material>
+    </visual>
+
+    <collision>
+      <geometry>
+        <box size="5 5 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="ground_plane_joint" type="fixed">
+    <parent link="world"/>
+    <child link="ground_plane"/>
+    <origin xyz="0 0 -0.01" rpy="0 0 0"/>
+  </joint>
+
+  <!-- Mount the robot base to the world. -->
+  <joint name="base_mount" type="fixed">
+    <parent link="world"/>
+    <child link="base_link_parent"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ========================================================= -->
+  <!-- Gazebo ros2_control plugin                                -->
+  <!-- ========================================================= -->
+
+  <gazebo>
+    <plugin
+        filename="libgz_ros2_control-system.so"
+        name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+
+      <parameters>$(arg simulation_controllers)</parameters>
+
+      <ros>
+        <namespace>$(arg ros_namespace)</namespace>
+      </ros>
+
+    </plugin>
+  </gazebo>
+
+  <!-- ========================================================= -->
+  <!-- ros2_control: UR5 + Robotiq 2F-85                         -->
+  <!-- ========================================================= -->
+
+  <ros2_control name="$(arg name)" type="system">
+
+    <hardware>
+      <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+    </hardware>
+
+    <!-- ------------------------------------------------------- -->
+    <!-- UR5 arm joints                                         -->
+    <!-- ------------------------------------------------------- -->
+
+    <joint name="shoulder_pan_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="shoulder_lift_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="elbow_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_1_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_2_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="wrist_3_joint">
+      <command_interface name="position"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- ------------------------------------------------------- -->
+    <!-- Robotiq 2F-85 actuated joint                            -->
+    <!-- ------------------------------------------------------- -->
+
+    <joint name="robotiq_85_left_knuckle_joint">
+      <command_interface name="position"/>
+
+      <state_interface name="position">
+        <param name="initial_value">0.7929</param>
+      </state_interface>
+
+      <state_interface name="velocity"/>
+    </joint>
+
+    <!-- ------------------------------------------------------- -->
+    <!-- Robotiq mimic joints                                    -->
+    <!-- Gazebo is responsible for their mimic behavior.         -->
+    <!-- Do not expose independent command interfaces.           -->
+    <!-- ------------------------------------------------------- -->
+
+    <joint name="robotiq_85_right_knuckle_joint"/>
+
+    <joint name="robotiq_85_left_inner_knuckle_joint"/>
+
+    <joint name="robotiq_85_right_inner_knuckle_joint"/>
+
+    <joint name="robotiq_85_left_finger_tip_joint"/>
+
+    <joint name="robotiq_85_right_finger_tip_joint"/>
+
+  </ros2_control>
+
+</robot>
+```
