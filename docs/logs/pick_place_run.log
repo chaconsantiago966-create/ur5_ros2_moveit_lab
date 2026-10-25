@@ -1,0 +1,455 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-25-08-46-40-390203-vm-8980
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [8993]
+[INFO] [parameter_bridge-2]: process started with pid [8995]
+[INFO] [robot_state_publisher-3]: process started with pid [8998]
+[INFO] [spawner-4]: process started with pid [9000]
+[INFO] [spawner-5]: process started with pid [9003]
+[INFO] [spawner-6]: process started with pid [9005]
+[INFO] [create-7]: process started with pid [9007]
+[INFO] [digital_io_sim-8]: process started with pid [9009]
+[INFO] [rviz2-9]: process started with pid [9013]
+[robot_state_publisher-3] [INFO] [1792936001.063389724] [robot_state_publisher]: Robot initialized
+[rviz2-9] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[create-7] [INFO] [1792936001.182471156] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1792936001.183456354] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[rviz2-9] [INFO] [1792936001.497323493] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1792936001.497687749] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-9] [INFO] [1792936001.522093927] [rviz2]: Stereo is NOT SUPPORTED
+[gazebo-1] [Dbg] [gz.cc:166] Subscribing to [/gazebo/starting_world].
+[gazebo-1] [Dbg] [gz.cc:168] Waiting for a world to be set from the GUI...
+[gazebo-1] [Msg] Received world [~/ws/install/ur5_pick_place/share/ur5_pick_place/worlds/pick_place_cell.sdf] from the GUI.
+[gazebo-1] [Dbg] [gz.cc:172] Unsubscribing from [/gazebo/starting_world].
+[gazebo-1] [Msg] Gazebo Sim Server v8.10.0
+[gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[gazebo-1] [Msg] Loading SDF world file[~/ws/install/ur5_pick_place/share/ur5_pick_place/worlds/pick_place_cell.sdf].
+[spawner-6] [INFO] [1792936001.684194751] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[digital_io_sim-8] [INFO] [1792936001.925705400] [digital_io_sim]: I/O simulado listo: 4 DI, 4 DO (auto_cell=True)
+[gazebo-1] [Msg] Serving entity system service on [/entity/system/add]
+[gazebo-1] [Dbg] [Physics.cc:899] Loaded [gz::physics::dartsim::Plugin] from library [/opt/mamba/envs/ros/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::Physics] for entity [1]
+[gazebo-1] [Msg] Create service on [/world/pick_place_cell/create_multiple] (async)
+[gazebo-1] [Msg] Create service on [/world/pick_place_cell/create_multiple/blocking] (blocking)
+[gazebo-1] [Msg] Remove service on [/world/pick_place_cell/remove] (async)
+[gazebo-1] [Msg] Remove service on [/world/pick_place_cell/remove/blocking] (blocking)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose] (async)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose/blocking] (blocking)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose_vector] (async)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose_vector/blocking] (blocking)
+[gazebo-1] [Msg] Light configuration service on [/world/pick_place_cell/light_config] (async)
+[gazebo-1] [Msg] Light configuration service on [/world/pick_place_cell/light_config/blocking] (blocking)
+[gazebo-1] [Msg] Physics service on [/world/pick_place_cell/set_physics] (async)
+[gazebo-1] [Msg] Physics service on [/world/pick_place_cell/set_physics/blocking] (blocking)
+[gazebo-1] [Msg] SphericalCoordinates service on [/world/pick_place_cell/set_spherical_coordinates] (async)
+[gazebo-1] [Msg] SphericalCoordinates service on [/world/pick_place_cell/set_spherical_coordinates/blocking] (blocking)
+[gazebo-1] [Msg] Enable collision service on [/world/pick_place_cell/enable_collision] (async)
+[gazebo-1] [Msg] Enable collision service on [/world/pick_place_cell/enable_collision/blocking] (blocking)
+[gazebo-1] [Msg] Disable collision service on [/world/pick_place_cell/disable_collision] (async)
+[gazebo-1] [Msg] Disable collision service on [/world/pick_place_cell/disable_collision/blocking] (blocking)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/visual_config] (async)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/visual_config/blocking] (blocking)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/wheel_slip] (async)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/wheel_slip/blocking] (blocking)
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::UserCommands] for entity [1]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::SceneBroadcaster] for entity [1]
+[gazebo-1] [Dbg] [Sensors.cc:697] Configuring Sensors system
+[gazebo-1] [Dbg] [Sensors.cc:557] SensorsPrivate::Run
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::Sensors] for entity [1]
+[gazebo-1] [Dbg] [Sensors.cc:532] SensorsPrivate::RenderThread started
+[gazebo-1] [Dbg] [Sensors.cc:337] Waiting for init
+[gazebo-1] [Msg] Loaded level [default]
+[gazebo-1] [Msg] Serving world controls on [/world/pick_place_cell/control], [/world/pick_place_cell/control/state] and [/world/pick_place_cell/playback/control]
+[gazebo-1] [Msg] Serving GUI information on [/world/pick_place_cell/gui/info]
+[gazebo-1] [Msg] World [pick_place_cell] initialized with [1ms] physics profile.
+[gazebo-1] [Msg] Serving world SDF generation service on [/world/pick_place_cell/generate_world_sdf]
+[gazebo-1] [Msg] Serving world names on [/gazebo/worlds]
+[gazebo-1] [Msg] Resource path add service on [/gazebo/resource_paths/add].
+[gazebo-1] [Msg] Resource path get service on [/gazebo/resource_paths/get].
+[gazebo-1] [Msg] Resource path resolve service on [/gazebo/resource_paths/resolve].
+[create-7] [INFO] [1792936002.339493984] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[gazebo-1] [Msg] Resource paths published on [/gazebo/resource_paths].
+[gazebo-1] [Msg] Server control service on [/server_control].
+[create-7] [INFO] [1792936002.350187892] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-7]: process has finished cleanly [pid 9007]
+[gazebo-1] [Msg] Gazebo Sim GUI    v8.10.0
+[gazebo-1] [Dbg] [Gui.cc:275] Waiting for subscribers to [/gazebo/starting_world]...
+[gazebo-1] [Dbg] [Application.cc:96] Initializing application.
+[gazebo-1] [Dbg] [Application.cc:170] Qt using OpenGL graphics interface
+[gazebo-1] [GUI] [Dbg] [Application.cc:657] Create main window
+[gazebo-1] [GUI] [Dbg] [PathManager.cc:68] Requesting resource paths through [/gazebo/resource_paths/get]
+[gazebo-1] [GUI] [Dbg] [Gui.cc:355] GUI requesting list of world names. The server may be busy downloading resources. Please be patient.
+[gazebo-1] [GUI] [Dbg] [Gui.cc:413] Requesting GUI from [/world/pick_place_cell/gui/info]...
+[gazebo-1] [GUI] [Dbg] [PathManager.cc:57] Received resource paths.
+[gazebo-1] [GUI] [Dbg] [GuiRunner.cc:149] Requesting initial state from [/world/pick_place_cell/state]...
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [MinimalScene]
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:986] Creating render thread interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:986] Creating render thread interface for OpenGL
+[gazebo-1] [GUI] [Msg] Added plugin [3D View] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [MinimalScene] from path [/opt/mamba/envs/ros/lib/gz-gui-8/plugins/libMinimalScene.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [GzSceneManager]
+[gazebo-1] [GUI] [Msg] Added plugin [Scene Manager] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [GzSceneManager] from path [/opt/mamba/envs/ros/lib/gz-sim-8/plugins/gui/libGzSceneManager.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [InteractiveViewControl]
+[gazebo-1] [GUI] [Msg] Camera view controller topic advertised on [/gui/camera/view_control]
+[gazebo-1] [GUI] [Msg] Camera reference visual topic advertised on [/gui/camera/view_control/reference_visual]
+[gazebo-1] [GUI] [Msg] Camera view control sensitivity advertised on [/gui/camera/view_control/sensitivity]
+[gazebo-1] [GUI] [Msg] Added plugin [Interactive view control] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [InteractiveViewControl] from path [/opt/mamba/envs/ros/lib/gz-gui-8/plugins/libInteractiveViewControl.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [WorldControl]
+[gazebo-1] [GUI] [Msg] Using world control service [/world/pick_place_cell/control]
+[gazebo-1] [GUI] [Msg] Listening to stats on [/world/pick_place_cell/stats]
+[gazebo-1] [GUI] [Dbg] [WorldControl.cc:237] Using an event to share WorldControl msgs with the server
+[gazebo-1] [GUI] [Wrn] [Application.cc:908] [QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"
+[gazebo-1] [GUI] [Wrn] [Ogre2RenderTarget.cc:668] Anti-aliasing level of '' is not supported; valid FSAA levels are: [ 0 ]. Setting to 1
+[gazebo-1] [GUI] [Msg] [Msg] Found no publishers on /stats, adding root stats topic
+[gazebo-1] [Msg] Found no publishers on /clock, adding root clock topic
+[gazebo-1] [Dbg] [SimulationRunner.cc:533] Creating PostUpdate worker threads: 3
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (1)
+[gazebo-1] [INFO] [1792936003.691735627] [gz_ros_control]: [gz_ros2_control] Fixed joint ['base_mount'] (Entity='46') is skipped.
+[gazebo-1] [INFO] [1792936003.692997073] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1792936003.722401028] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-1] [WARN] [1792936003.722430548] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-1] [INFO] [1792936003.738725340] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1792936003.739465847] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [WARN] [1792936004.740364954] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gazebo-1] [INFO] [1792936004.787693196] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1792936004.787766475] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-1] [INFO] [1792936004.805750840] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1792936004.805821031] [gz_ros_control]: Loading joint: shoulder_pan_joint
+[gazebo-1] [INFO] [1792936004.805827208] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805831328] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805836396] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.805841272] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.805844252] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805858260] [gz_ros_control]: Loading joint: shoulder_lift_joint
+[gazebo-1] [INFO] [1792936004.805896231] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805900451] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805904573] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.805907722] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.805910626] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805920511] [gz_ros_control]: Loading joint: elbow_joint
+[gazebo-1] [INFO] [1792936004.805924175] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805927500] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805931271] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.805934161] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.805940323] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805948504] [gz_ros_control]: Loading joint: wrist_1_joint
+[gazebo-1] [INFO] [1792936004.805951571] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805954172] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805957180] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.805959812] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.805962454] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805968373] [gz_ros_control]: Loading joint: wrist_2_joint
+[gazebo-1] [INFO] [1792936004.805971007] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805973388] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805977172] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.805979705] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.805982160] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805991537] [gz_ros_control]: Loading joint: wrist_3_joint
+[gazebo-1] [INFO] [1792936004.805994342] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.805996866] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.805999298] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.806001797] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.806006139] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.806013120] [gz_ros_control]: Loading joint: gripper_finger_joint
+[gazebo-1] [INFO] [1792936004.806016135] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.806018673] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.806021374] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.806024031] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.806026329] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.806034091] [gz_ros_control]: Loading joint: right_finger_joint
+[gazebo-1] [INFO] [1792936004.806036945] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792936004.806039375] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.806041877] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792936004.806044345] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792936004.806046615] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792936004.806142130] [controller_manager]: Initialize hardware 'ur' 
+[gazebo-1] [WARN] [1792936004.806153931] [controller_manager.hardware_component.system.ur]: Executor is not available during hardware component initialization for 'ur'. Skipping node creation!
+[gazebo-1] [INFO] [1792936004.806193895] [controller_manager]: Successful initialization of hardware 'ur'
+[gazebo-1] [INFO] [1792936004.806544292] [controller_manager]: Activating component 'ur'.
+[gazebo-1] [INFO] [1792936004.806557789] [resource_manager]: 'configure' hardware 'ur' 
+[gazebo-1] [INFO] [1792936004.806565508] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1792936004.806572651] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gazebo-1] [INFO] [1792936004.806577516] [resource_manager]: 'activate' hardware 'ur' 
+[gazebo-1] [INFO] [1792936004.806581899] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gazebo-1] [WARN] [1792936004.806602836] [controller_manager]: Component 'ur' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [INFO] [1792936004.806609013] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] [INFO] [1792936004.946661253] [controller_manager]: Loading controller : 'gripper_controller' of type 'position_controllers/JointGroupPositionController'
+[gazebo-1] [INFO] [1792936004.946710307] [controller_manager]: Loading controller 'gripper_controller'
+[gazebo-1] [INFO] [1792936004.951724634] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-6] [INFO] [1792936004.974970490] [spawner_gripper_controller]: Loaded gripper_controller
+[gazebo-1] [INFO] [1792936004.977465262] [controller_manager]: Configuring controller: 'gripper_controller'
+[gazebo-1] [INFO] [1792936004.978967803] [gripper_controller]: configure successful
+[gazebo-1] [INFO] [1792936004.982090203] [controller_manager]: Activating controllers: [ gripper_controller ]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz_ros2_control::GazeboSimROS2ControlPlugin] for entity [16]
+[gazebo-1] [Dbg] [UserCommands.cc:1094] Created entity [16] named [ur]
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [base_link_parent_fixed_joint_lump__base_link_inertia_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [shoulder_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [upper_arm_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [forearm_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_1_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_2_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_3_link_collision] couldn't be created
+[gazebo-1] [Msg] Serving scene information on [/world/pick_place_cell/scene/info]
+[gazebo-1] [Msg] Serving graph information on [/world/pick_place_cell/scene/graph]
+[gazebo-1] [Msg] Serving full state on [/world/pick_place_cell/state]
+[gazebo-1] [Msg] Serving full state (async) on [/world/pick_place_cell/state_async]
+[gazebo-1] [Msg] Publishing scene information on [/world/pick_place_cell/scene/info]
+[gazebo-1] [Msg] Publishing entity deletions on [/world/pick_place_cell/scene/deletion]
+[gazebo-1] [Msg] Publishing state changes on [/world/pick_place_cell/state]
+[gazebo-1] [Msg] Publishing pose messages on [/world/pick_place_cell/pose/info]
+[gazebo-1] [Msg] Publishing dynamic pose messages on [/world/pick_place_cell/dynamic_pose/info]
+[gazebo-1] [Dbg] [EntityComponentManager.cc:1656] Updated state thread iterators: 2 threads processing around 27 entities each.
+[gazebo-1] [Dbg] [SimulationRunner.cc:560] Exiting postupdate worker thread (1)
+[gazebo-1] [Dbg] [SimulationRunner.cc:560] Exiting postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:533] Creating PostUpdate worker threads: 4
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (1)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (2)
+[gazebo-1] [WARN] [1792936005.808516949] [gz_ros_control]:  Desired controller update period (0.002 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-1] [INFO] [1792936005.810174956] [gripper_controller]: activate successful
+[gazebo-1] [INFO] [1792936005.810334758] [controller_manager]: Successfully switched controllers!
+[spawner-6] [INFO] [1792936005.827392884] [spawner_gripper_controller]: Configured and activated gripper_controller
+[spawner-5] [INFO] [1792936006.090987312] [spawner_scaled_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-6]: process has finished cleanly [pid 9005]
+[gazebo-1] [INFO] [1792936006.354095885] [controller_manager]: Loading controller : 'scaled_joint_trajectory_controller' of type 'ur_controllers/ScaledJointTrajectoryController'
+[gazebo-1] [INFO] [1792936006.354152250] [controller_manager]: Loading controller 'scaled_joint_trajectory_controller'
+[gazebo-1] [INFO] [1792936006.425774836] [controller_manager]: Controller 'scaled_joint_trajectory_controller' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[gazebo-1] [INFO] [1792936006.458621601] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not use speed scaling.
+[spawner-5] [INFO] [1792936006.495212832] [spawner_scaled_joint_trajectory_controller]: Loaded scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792936006.503475963] [controller_manager]: Configuring controller: 'scaled_joint_trajectory_controller'
+[gazebo-1] [INFO] [1792936006.503701652] [scaled_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-1] [INFO] [1792936006.503717752] [scaled_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-1] [INFO] [1792936006.503733128] [scaled_joint_trajectory_controller]: Using 'splines' interpolation method.
+[gazebo-1] [INFO] [1792936006.541934244] [scaled_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-1] [INFO] [1792936006.564259898] [scaled_joint_trajectory_controller]: Setting initial scaling factor to 1.000000
+[gazebo-1] [INFO] [1792936006.564293902] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-1] [INFO] [1792936006.577713393] [controller_manager]: Activating controllers: [ scaled_joint_trajectory_controller ]
+[gazebo-1] [INFO] [1792936006.583564282] [scaled_joint_trajectory_controller]: action_execution_timeout is disabled (set to 0.0)
+[gazebo-1] [INFO] [1792936006.583703785] [controller_manager]: Successfully switched controllers!
+[spawner-5] [INFO] [1792936006.590191746] [spawner_scaled_joint_trajectory_controller]: Configured and activated scaled_joint_trajectory_controller
+[spawner-4] [INFO] [1792936006.736602610] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-5]: process has finished cleanly [pid 9003]
+[gazebo-1] [INFO] [1792936008.040914604] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1792936008.041279404] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1792936008.056758927] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-4] [INFO] [1792936008.109038365] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gazebo-1] [INFO] [1792936008.114687642] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1792936008.114757780] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-1] [INFO] [1792936008.140783654] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[gazebo-1] [INFO] [1792936008.145565311] [controller_manager]: Successfully switched controllers!
+[spawner-4] [INFO] [1792936008.158093977] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-4]: process has finished cleanly [pid 9000]
+[INFO] [pick_place_node-10]: process started with pid [9263]
+[pick_place_node-10] [INFO] [1792936017.135895417] [pick_place_node]: [MENSAJE] ===== Ciclo 1/2 =====
+[pick_place_node-10] [INFO] [1792936017.136475206] [pick_place_node]: Paso 1/32: message:Inicio de ciclo - robot a HOME
+[pick_place_node-10] [INFO] [1792936017.139486552] [pick_place_node]: [MENSAJE] Inicio de ciclo - robot a HOME
+[pick_place_node-10] [INFO] [1792936017.139848662] [pick_place_node]: Paso 2/32: move:home@3
+[pick_place_node-10] [INFO] [1792936017.140087882] [pick_place_node]: [MOVE] -> home [0.0, -1.57, 1.57, -1.57, -1.57, 0.0] (3.0s)
+[gazebo-1] [INFO] [1792936017.147445436] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936017.147489283] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936023.329018942] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936023.365814402] [pick_place_node]: Paso 3/32: gripper:open
+[pick_place_node-10] [INFO] [1792936023.366102440] [pick_place_node]: [GRIPPER] OPEN (0.040 m)
+[pick_place_node-10] [WARN] [1792936028.382167570] [pick_place_node]: Articulaciones no alcanzaron el objetivo (tolerancia) - se continúa
+[pick_place_node-10] [INFO] [1792936028.395576317] [pick_place_node]: Paso 4/32: message:Encendiendo banda transportadora (DO0)
+[pick_place_node-10] [INFO] [1792936028.395900584] [pick_place_node]: [MENSAJE] Encendiendo banda transportadora (DO0)
+[pick_place_node-10] [INFO] [1792936028.396168323] [pick_place_node]: Paso 5/32: set_output:0=ON
+[digital_io_sim-8] [INFO] [1792936028.421827225] [digital_io_sim]: DO0: OFF->ON
+[pick_place_node-10] [INFO] [1792936028.456881923] [pick_place_node]: [SET DO0] DO0 = ON
+[pick_place_node-10] [INFO] [1792936028.467390207] [pick_place_node]: Paso 6/32: message:Esperando pieza en estación PICK (DI0)
+[pick_place_node-10] [INFO] [1792936028.467698855] [pick_place_node]: [MENSAJE] Esperando pieza en estación PICK (DI0)
+[pick_place_node-10] [INFO] [1792936028.470692374] [pick_place_node]: Paso 7/32: wait_input:0=ON
+[pick_place_node-10] [INFO] [1792936028.470974275] [pick_place_node]: [WAIT DI0] esperando ON ...
+[digital_io_sim-8] [INFO] [1792936032.166815426] [digital_io_sim]: DI0: OFF->ON
+[pick_place_node-10] [INFO] [1792936032.191866451] [pick_place_node]: [WAIT DI0] condición cumplida
+[pick_place_node-10] [INFO] [1792936032.192306479] [pick_place_node]: Paso 8/32: spawn_part
+[pick_place_node-10] [INFO] [1792936032.192668285] [pick_place_node]: Paso 9/32: set_output:0=OFF
+[digital_io_sim-8] [INFO] [1792936032.202925824] [digital_io_sim]: DO0: ON->OFF
+[pick_place_node-10] [INFO] [1792936032.211978704] [pick_place_node]: [SET DO0] DO0 = OFF
+[pick_place_node-10] [INFO] [1792936032.212467879] [pick_place_node]: Paso 10/32: move:pick_approach@3
+[pick_place_node-10] [INFO] [1792936032.212796260] [pick_place_node]: [MOVE] -> pick_approach [0.293, -1.532, 1.485, -1.524, -1.571, 1.864] (3.0s)
+[gazebo-1] [INFO] [1792936032.218730583] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936032.218768409] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936037.981619792] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936038.029624901] [pick_place_node]: Paso 11/32: message:Aproximación a PICK - descendiendo
+[pick_place_node-10] [INFO] [1792936038.031128660] [pick_place_node]: [MENSAJE] Aproximación a PICK - descendiendo
+[pick_place_node-10] [INFO] [1792936038.033108079] [pick_place_node]: Paso 12/32: move:pick@2
+[pick_place_node-10] [INFO] [1792936038.033452317] [pick_place_node]: [MOVE] -> pick [0.293, -1.453, 1.87, -1.988, -1.571, 1.864] (2.0s)
+[gazebo-1] [INFO] [1792936038.034938398] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936038.034972686] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936041.605329073] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936041.644144873] [pick_place_node]: Paso 13/32: gripper:close
+[pick_place_node-10] [INFO] [1792936041.644456067] [pick_place_node]: [GRIPPER] CLOSE (0.020 m)
+[pick_place_node-10] [INFO] [1792936042.247938804] [pick_place_node]: Paso 14/32: attach
+[pick_place_node-10] [INFO] [1792936042.255218045] [pick_place_node]: Paso 15/32: message:Pieza sujeta
+[pick_place_node-10] [INFO] [1792936042.255529867] [pick_place_node]: [MENSAJE] Pieza sujeta
+[pick_place_node-10] [INFO] [1792936042.255861060] [pick_place_node]: Paso 16/32: move:pick_approach@2
+[pick_place_node-10] [INFO] [1792936042.256088222] [pick_place_node]: [MOVE] -> pick_approach [0.293, -1.532, 1.485, -1.524, -1.571, 1.864] (2.0s)
+[gazebo-1] [INFO] [1792936042.262002055] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936042.262036166] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936046.068609061] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936046.125048486] [pick_place_node]: Paso 17/32: move:inspect@3
+[pick_place_node-10] [INFO] [1792936046.127366371] [pick_place_node]: [MOVE] -> inspect [1.326, -1.674, 1.494, -1.39, -1.571, 2.897] (3.0s)
+[gazebo-1] [INFO] [1792936046.130961907] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936046.130996204] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936051.936193601] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936051.991795715] [pick_place_node]: Paso 18/32: message:Punto de inspección - pieza OK
+[pick_place_node-10] [INFO] [1792936051.992093952] [pick_place_node]: [MENSAJE] Punto de inspección - pieza OK
+[pick_place_node-10] [INFO] [1792936051.996012052] [pick_place_node]: Paso 19/32: wait:1.0
+[pick_place_node-10] [INFO] [1792936053.028744285] [pick_place_node]: Paso 20/32: move:place_approach@3
+[pick_place_node-10] [INFO] [1792936053.030019280] [pick_place_node]: [MOVE] -> place_approach [-0.791, -1.469, 1.417, -1.519, -1.571, 0.78] (3.0s)
+[gazebo-1] [INFO] [1792936053.036757000] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936053.036792092] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936058.596045362] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936058.647372425] [pick_place_node]: Paso 21/32: message:Esperando zona de descarga libre (DI2)
+[pick_place_node-10] [INFO] [1792936058.647739508] [pick_place_node]: [MENSAJE] Esperando zona de descarga libre (DI2)
+[pick_place_node-10] [INFO] [1792936058.648023352] [pick_place_node]: Paso 22/32: wait_input:2=ON
+[pick_place_node-10] [INFO] [1792936058.648255111] [pick_place_node]: [WAIT DI2] esperando ON ...
+[pick_place_node-10] [INFO] [1792936058.648498880] [pick_place_node]: [WAIT DI2] condición cumplida
+[pick_place_node-10] [INFO] [1792936058.648736456] [pick_place_node]: Paso 23/32: move:place@2
+[pick_place_node-10] [INFO] [1792936058.648950839] [pick_place_node]: [MOVE] -> place [-0.791, -1.394, 1.801, -1.978, -1.571, 0.78] (2.0s)
+[gazebo-1] [INFO] [1792936058.653018175] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936058.653050272] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936062.344080261] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936062.385411079] [pick_place_node]: Paso 24/32: gripper:open
+[pick_place_node-10] [INFO] [1792936062.387453554] [pick_place_node]: [GRIPPER] OPEN (0.040 m)
+[pick_place_node-10] [INFO] [1792936062.942000680] [pick_place_node]: Paso 25/32: detach
+[pick_place_node-10] [INFO] [1792936062.942369420] [pick_place_node]: Paso 26/32: message:Pieza depositada - avisando al PLC (DO1)
+[pick_place_node-10] [INFO] [1792936062.942584656] [pick_place_node]: [MENSAJE] Pieza depositada - avisando al PLC (DO1)
+[pick_place_node-10] [INFO] [1792936062.949524854] [pick_place_node]: Paso 27/32: set_output:1=ON
+[digital_io_sim-8] [INFO] [1792936062.956426085] [digital_io_sim]: DO1: OFF->ON
+[pick_place_node-10] [INFO] [1792936062.976214456] [pick_place_node]: [SET DO1] DO1 = ON
+[pick_place_node-10] [INFO] [1792936062.976532688] [pick_place_node]: Paso 28/32: wait_input:1=ON
+[pick_place_node-10] [INFO] [1792936062.976739545] [pick_place_node]: [WAIT DI1] esperando ON ...
+[digital_io_sim-8] [INFO] [1792936065.307033664] [digital_io_sim]: DI1: OFF->ON
+[digital_io_sim-8] [INFO] [1792936065.312942575] [digital_io_sim]: DI0: ON->OFF
+[pick_place_node-10] [INFO] [1792936065.339119149] [pick_place_node]: [WAIT DI1] condición cumplida
+[pick_place_node-10] [INFO] [1792936065.339505109] [pick_place_node]: Paso 29/32: message:PLC confirmó (DI1) - liberando DO1
+[pick_place_node-10] [INFO] [1792936065.339992039] [pick_place_node]: [MENSAJE] PLC confirmó (DI1) - liberando DO1
+[pick_place_node-10] [INFO] [1792936065.341426036] [pick_place_node]: Paso 30/32: set_output:1=OFF
+[digital_io_sim-8] [INFO] [1792936065.344128042] [digital_io_sim]: DO1: ON->OFF
+[digital_io_sim-8] [INFO] [1792936065.348406523] [digital_io_sim]: DI1: ON->OFF
+[pick_place_node-10] [INFO] [1792936065.354654353] [pick_place_node]: [SET DO1] DO1 = OFF
+[pick_place_node-10] [INFO] [1792936065.356927491] [pick_place_node]: Paso 31/32: move:place_approach@2
+[pick_place_node-10] [INFO] [1792936065.362400058] [pick_place_node]: [MOVE] -> place_approach [-0.791, -1.469, 1.417, -1.519, -1.571, 0.78] (2.0s)
+[gazebo-1] [INFO] [1792936065.364907173] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936065.364940803] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936069.007312522] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936069.062908301] [pick_place_node]: Paso 32/32: move:home@3
+[pick_place_node-10] [INFO] [1792936069.063191520] [pick_place_node]: [MOVE] -> home [0.0, -1.57, 1.57, -1.57, -1.57, 0.0] (3.0s)
+[gazebo-1] [INFO] [1792936069.065251402] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936069.065288598] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936074.805825117] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936074.836602454] [pick_place_node]: [MENSAJE] ===== Ciclo 2/2 =====
+[pick_place_node-10] [INFO] [1792936074.836956229] [pick_place_node]: Paso 1/32: message:Inicio de ciclo - robot a HOME
+[pick_place_node-10] [INFO] [1792936074.838415691] [pick_place_node]: [MENSAJE] Inicio de ciclo - robot a HOME
+[pick_place_node-10] [INFO] [1792936074.849005269] [pick_place_node]: Paso 2/32: move:home@3
+[pick_place_node-10] [INFO] [1792936074.849397920] [pick_place_node]: [MOVE] -> home [0.0, -1.57, 1.57, -1.57, -1.57, 0.0] (3.0s)
+[gazebo-1] [INFO] [1792936074.851435252] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936074.851467419] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936080.380207063] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936080.421010111] [pick_place_node]: Paso 3/32: gripper:open
+[pick_place_node-10] [INFO] [1792936080.421377525] [pick_place_node]: [GRIPPER] OPEN (0.040 m)
+[pick_place_node-10] [INFO] [1792936080.421831504] [pick_place_node]: Paso 4/32: message:Encendiendo banda transportadora (DO0)
+[pick_place_node-10] [INFO] [1792936080.422038283] [pick_place_node]: [MENSAJE] Encendiendo banda transportadora (DO0)
+[pick_place_node-10] [INFO] [1792936080.422327919] [pick_place_node]: Paso 5/32: set_output:0=ON
+[digital_io_sim-8] [INFO] [1792936080.423577056] [digital_io_sim]: DO0: OFF->ON
+[pick_place_node-10] [INFO] [1792936080.435539613] [pick_place_node]: [SET DO0] DO0 = ON
+[pick_place_node-10] [INFO] [1792936080.435908909] [pick_place_node]: Paso 6/32: message:Esperando pieza en estación PICK (DI0)
+[pick_place_node-10] [INFO] [1792936080.437719304] [pick_place_node]: [MENSAJE] Esperando pieza en estación PICK (DI0)
+[pick_place_node-10] [INFO] [1792936080.438025940] [pick_place_node]: Paso 7/32: wait_input:0=ON
+[pick_place_node-10] [INFO] [1792936080.438286110] [pick_place_node]: [WAIT DI0] esperando ON ...
+[digital_io_sim-8] [INFO] [1792936083.684417718] [digital_io_sim]: DI0: OFF->ON
+[pick_place_node-10] [INFO] [1792936083.778702513] [pick_place_node]: [WAIT DI0] condición cumplida
+[pick_place_node-10] [INFO] [1792936083.779028578] [pick_place_node]: Paso 8/32: spawn_part
+[pick_place_node-10] [INFO] [1792936083.779333670] [pick_place_node]: Paso 9/32: set_output:0=OFF
+[digital_io_sim-8] [INFO] [1792936083.784523731] [digital_io_sim]: DO0: ON->OFF
+[pick_place_node-10] [INFO] [1792936083.795939435] [pick_place_node]: [SET DO0] DO0 = OFF
+[pick_place_node-10] [INFO] [1792936083.805140354] [pick_place_node]: Paso 10/32: move:pick_approach@3
+[pick_place_node-10] [INFO] [1792936083.808821864] [pick_place_node]: [MOVE] -> pick_approach [0.293, -1.532, 1.485, -1.524, -1.571, 1.864] (3.0s)
+[gazebo-1] [INFO] [1792936083.812163706] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936083.812210856] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936089.807708905] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936089.829933156] [pick_place_node]: Paso 11/32: message:Aproximación a PICK - descendiendo
+[pick_place_node-10] [INFO] [1792936089.830203927] [pick_place_node]: [MENSAJE] Aproximación a PICK - descendiendo
+[pick_place_node-10] [INFO] [1792936089.830590716] [pick_place_node]: Paso 12/32: move:pick@2
+[pick_place_node-10] [INFO] [1792936089.830844509] [pick_place_node]: [MOVE] -> pick [0.293, -1.453, 1.87, -1.988, -1.571, 1.864] (2.0s)
+[gazebo-1] [INFO] [1792936089.834382885] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936089.834417284] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936093.900048245] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936093.969215618] [pick_place_node]: Paso 13/32: gripper:close
+[pick_place_node-10] [INFO] [1792936093.969644153] [pick_place_node]: [GRIPPER] CLOSE (0.020 m)
+[pick_place_node-10] [INFO] [1792936094.357424665] [pick_place_node]: Paso 14/32: attach
+[pick_place_node-10] [INFO] [1792936094.357792869] [pick_place_node]: Paso 15/32: message:Pieza sujeta
+[pick_place_node-10] [INFO] [1792936094.358008775] [pick_place_node]: [MENSAJE] Pieza sujeta
+[pick_place_node-10] [INFO] [1792936094.358309607] [pick_place_node]: Paso 16/32: move:pick_approach@2
+[pick_place_node-10] [INFO] [1792936094.358549101] [pick_place_node]: [MOVE] -> pick_approach [0.293, -1.532, 1.485, -1.524, -1.571, 1.864] (2.0s)
+[gazebo-1] [INFO] [1792936094.365261768] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936094.365308645] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936098.295780428] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936098.336373817] [pick_place_node]: Paso 17/32: move:inspect@3
+[pick_place_node-10] [INFO] [1792936098.336637579] [pick_place_node]: [MOVE] -> inspect [1.326, -1.674, 1.494, -1.39, -1.571, 2.897] (3.0s)
+[gazebo-1] [INFO] [1792936098.338951920] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936098.338986171] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936104.121442817] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936104.167729244] [pick_place_node]: Paso 18/32: message:Punto de inspección - pieza OK
+[pick_place_node-10] [INFO] [1792936104.169529068] [pick_place_node]: [MENSAJE] Punto de inspección - pieza OK
+[pick_place_node-10] [INFO] [1792936104.176381928] [pick_place_node]: Paso 19/32: wait:1.0
+[pick_place_node-10] [INFO] [1792936105.177728176] [pick_place_node]: Paso 20/32: move:place_approach@3
+[pick_place_node-10] [INFO] [1792936105.193404757] [pick_place_node]: [MOVE] -> place_approach [-0.791, -1.469, 1.417, -1.519, -1.571, 0.78] (3.0s)
+[gazebo-1] [INFO] [1792936105.194665698] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936105.194699696] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936110.861295496] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936110.910957320] [pick_place_node]: Paso 21/32: message:Esperando zona de descarga libre (DI2)
+[pick_place_node-10] [INFO] [1792936110.913598924] [pick_place_node]: [MENSAJE] Esperando zona de descarga libre (DI2)
+[pick_place_node-10] [INFO] [1792936110.915511279] [pick_place_node]: Paso 22/32: wait_input:2=ON
+[pick_place_node-10] [INFO] [1792936110.920880514] [pick_place_node]: [WAIT DI2] esperando ON ...
+[pick_place_node-10] [INFO] [1792936110.922826706] [pick_place_node]: [WAIT DI2] condición cumplida
+[pick_place_node-10] [INFO] [1792936110.930031331] [pick_place_node]: Paso 23/32: move:place@2
+[pick_place_node-10] [INFO] [1792936110.931489205] [pick_place_node]: [MOVE] -> place [-0.791, -1.394, 1.801, -1.978, -1.571, 0.78] (2.0s)
+[gazebo-1] [INFO] [1792936110.936807485] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936110.936860846] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936114.707486765] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936114.756455257] [pick_place_node]: Paso 24/32: gripper:open
+[pick_place_node-10] [INFO] [1792936114.756776943] [pick_place_node]: [GRIPPER] OPEN (0.040 m)
+[pick_place_node-10] [INFO] [1792936115.286319672] [pick_place_node]: Paso 25/32: detach
+[pick_place_node-10] [INFO] [1792936115.286627839] [pick_place_node]: Paso 26/32: message:Pieza depositada - avisando al PLC (DO1)
+[pick_place_node-10] [INFO] [1792936115.286832700] [pick_place_node]: [MENSAJE] Pieza depositada - avisando al PLC (DO1)
+[pick_place_node-10] [INFO] [1792936115.287174253] [pick_place_node]: Paso 27/32: set_output:1=ON
+[digital_io_sim-8] [INFO] [1792936115.289212232] [digital_io_sim]: DO1: OFF->ON
+[pick_place_node-10] [INFO] [1792936115.308808096] [pick_place_node]: [SET DO1] DO1 = ON
+[pick_place_node-10] [INFO] [1792936115.309113378] [pick_place_node]: Paso 28/32: wait_input:1=ON
+[pick_place_node-10] [INFO] [1792936115.309727185] [pick_place_node]: [WAIT DI1] esperando ON ...
+[digital_io_sim-8] [INFO] [1792936117.852466102] [digital_io_sim]: DI1: OFF->ON
+[digital_io_sim-8] [INFO] [1792936117.858576737] [digital_io_sim]: DI0: ON->OFF
+[pick_place_node-10] [INFO] [1792936117.906128484] [pick_place_node]: [WAIT DI1] condición cumplida
+[pick_place_node-10] [INFO] [1792936117.911002797] [pick_place_node]: Paso 29/32: message:PLC confirmó (DI1) - liberando DO1
+[pick_place_node-10] [INFO] [1792936117.912460466] [pick_place_node]: [MENSAJE] PLC confirmó (DI1) - liberando DO1
+[pick_place_node-10] [INFO] [1792936117.914553815] [pick_place_node]: Paso 30/32: set_output:1=OFF
+[digital_io_sim-8] [INFO] [1792936117.921581963] [digital_io_sim]: DO1: ON->OFF
+[digital_io_sim-8] [INFO] [1792936117.927505057] [digital_io_sim]: DI1: ON->OFF
+[pick_place_node-10] [INFO] [1792936117.976094060] [pick_place_node]: [SET DO1] DO1 = OFF
+[pick_place_node-10] [INFO] [1792936117.983994547] [pick_place_node]: Paso 31/32: move:place_approach@2
+[pick_place_node-10] [INFO] [1792936117.984480904] [pick_place_node]: [MOVE] -> place_approach [-0.791, -1.469, 1.417, -1.519, -1.571, 0.78] (2.0s)
+[gazebo-1] [INFO] [1792936117.986133735] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936117.986172196] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936121.525510708] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936121.570801137] [pick_place_node]: Paso 32/32: move:home@3
+[pick_place_node-10] [INFO] [1792936121.571067079] [pick_place_node]: [MOVE] -> home [0.0, -1.57, 1.57, -1.57, -1.57, 0.0] (3.0s)
+[gazebo-1] [INFO] [1792936121.574060054] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792936121.574095972] [scaled_joint_trajectory_controller]: Accepted new action goal
+[gazebo-1] [INFO] [1792936127.416492417] [scaled_joint_trajectory_controller]: Goal reached, success!
+[pick_place_node-10] [INFO] [1792936127.433339859] [pick_place_node]: [MENSAJE] Rutina Pick & Place finalizada
+[INFO] [pick_place_node-10]: process has finished cleanly [pid 9263]

@@ -1,0 +1,628 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-25-09-40-46-712454-vm-18523
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [gazebo-1]: process started with pid [18536]
+[INFO] [parameter_bridge-2]: process started with pid [18538]
+[INFO] [robot_state_publisher-3]: process started with pid [18541]
+[INFO] [spawner-4]: process started with pid [18543]
+[INFO] [spawner-5]: process started with pid [18546]
+[INFO] [spawner-6]: process started with pid [18549]
+[INFO] [create-7]: process started with pid [18552]
+[robot_state_publisher-3] [INFO] [1792939247.583816568] [robot_state_publisher]: Robot initialized
+[create-7] [INFO] [1792939247.635936807] [ros_gz_sim]: Requesting list of world names.
+[parameter_bridge-2] [INFO] [1792939247.678646301] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[gazebo-1] [Dbg] [gz.cc:166] Subscribing to [/gazebo/starting_world].
+[gazebo-1] [Dbg] [gz.cc:168] Waiting for a world to be set from the GUI...
+[gazebo-1] [Msg] Received world [~/ws/install/ur5_pick_place/share/ur5_pick_place/worlds/pick_place_cell.sdf] from the GUI.
+[gazebo-1] [Dbg] [gz.cc:172] Unsubscribing from [/gazebo/starting_world].
+[gazebo-1] [Msg] Gazebo Sim Server v8.10.0
+[spawner-5] [INFO] [1792939248.047149415] [spawner_scaled_joint_trajectory_controller]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[gazebo-1] [Msg] Loading SDF world file[~/ws/install/ur5_pick_place/share/ur5_pick_place/worlds/pick_place_cell.sdf].
+[gazebo-1] [Msg] Serving entity system service on [/entity/system/add]
+[gazebo-1] [Dbg] [Physics.cc:899] Loaded [gz::physics::dartsim::Plugin] from library [/opt/mamba/envs/ros/lib/gz-physics-7/engine-plugins/libgz-physics-dartsim-plugin.so]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::Physics] for entity [1]
+[gazebo-1] [Msg] Create service on [/world/pick_place_cell/create_multiple] (async)
+[gazebo-1] [Msg] Create service on [/world/pick_place_cell/create_multiple/blocking] (blocking)
+[gazebo-1] [Msg] Remove service on [/world/pick_place_cell/remove] (async)
+[gazebo-1] [Msg] Remove service on [/world/pick_place_cell/remove/blocking] (blocking)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose] (async)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose/blocking] (blocking)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose_vector] (async)
+[gazebo-1] [Msg] Pose service on [/world/pick_place_cell/set_pose_vector/blocking] (blocking)
+[gazebo-1] [Msg] Light configuration service on [/world/pick_place_cell/light_config] (async)
+[gazebo-1] [Msg] Light configuration service on [/world/pick_place_cell/light_config/blocking] (blocking)
+[gazebo-1] [Msg] Physics service on [/world/pick_place_cell/set_physics] (async)
+[gazebo-1] [Msg] Physics service on [/world/pick_place_cell/set_physics/blocking] (blocking)
+[gazebo-1] [Msg] SphericalCoordinates service on [/world/pick_place_cell/set_spherical_coordinates] (async)
+[gazebo-1] [Msg] SphericalCoordinates service on [/world/pick_place_cell/set_spherical_coordinates/blocking] (blocking)
+[gazebo-1] [Msg] Enable collision service on [/world/pick_place_cell/enable_collision] (async)
+[gazebo-1] [Msg] Enable collision service on [/world/pick_place_cell/enable_collision/blocking] (blocking)
+[gazebo-1] [Msg] Disable collision service on [/world/pick_place_cell/disable_collision] (async)
+[gazebo-1] [Msg] Disable collision service on [/world/pick_place_cell/disable_collision/blocking] (blocking)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/visual_config] (async)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/visual_config/blocking] (blocking)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/wheel_slip] (async)
+[gazebo-1] [Msg] Material service on [/world/pick_place_cell/wheel_slip/blocking] (blocking)
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::UserCommands] for entity [1]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::SceneBroadcaster] for entity [1]
+[gazebo-1] [Dbg] [Sensors.cc:697] Configuring Sensors system
+[gazebo-1] [Dbg] [Sensors.cc:557] SensorsPrivate::Run
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz::sim::systems::Sensors] for entity [1]
+[gazebo-1] [Dbg] [Sensors.cc:532] SensorsPrivate::RenderThread started
+[gazebo-1] [Dbg] [Sensors.cc:337] Waiting for init
+[gazebo-1] [Msg] Loaded level [default]
+[gazebo-1] [Msg] Serving world controls on [/world/pick_place_cell/control], [/world/pick_place_cell/control/state] and [/world/pick_place_cell/playback/control]
+[gazebo-1] [Msg] Serving GUI information on [/world/pick_place_cell/gui/info]
+[gazebo-1] [Msg] World [pick_place_cell] initialized with [1ms] physics profile.
+[gazebo-1] [Msg] Serving world SDF generation service on [/world/pick_place_cell/generate_world_sdf]
+[gazebo-1] [Msg] Serving world names on [/gazebo/worlds]
+[create-7] [INFO] [1792939248.494518609] [ros_gz_sim]: Waiting messages on topic [robot_description].
+[gazebo-1] [Msg] Resource path add service on [/gazebo/resource_paths/add].
+[gazebo-1] [Msg] Resource path get service on [/gazebo/resource_paths/get].
+[gazebo-1] [Msg] Resource path resolve service on [/gazebo/resource_paths/resolve].
+[gazebo-1] [Msg] Resource paths published on [/gazebo/resource_paths].
+[gazebo-1] [Msg] Server control service on [/server_control].
+[create-7] [INFO] [1792939248.594405172] [ros_gz_sim]: Entity creation successful.
+[INFO] [create-7]: process has finished cleanly [pid 18552]
+[gazebo-1] [Msg] Gazebo Sim GUI    v8.10.0
+[gazebo-1] [Dbg] [Gui.cc:275] Waiting for subscribers to [/gazebo/starting_world]...
+[gazebo-1] [Dbg] [Application.cc:96] Initializing application.
+[gazebo-1] [Dbg] [Application.cc:170] Qt using OpenGL graphics interface
+[gazebo-1] [GUI] [Dbg] [Application.cc:657] Create main window
+[gazebo-1] [GUI] [Dbg] [PathManager.cc:68] Requesting resource paths through [/gazebo/resource_paths/get]
+[gazebo-1] [GUI] [Dbg] [Gui.cc:355] GUI requesting list of world names. The server may be busy downloading resources. Please be patient.
+[gazebo-1] [GUI] [Dbg] [Gui.cc:413] Requesting GUI from [/world/pick_place_cell/gui/info]...
+[gazebo-1] [GUI] [Dbg] [PathManager.cc:57] Received resource paths.
+[gazebo-1] [GUI] [Dbg] [GuiRunner.cc:149] Requesting initial state from [/world/pick_place_cell/state]...
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [MinimalScene]
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:986] Creating render thread interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:802] Creating gz-rendering interface for OpenGL
+[gazebo-1] [GUI] [Dbg] [MinimalScene.cc:986] Creating render thread interface for OpenGL
+[gazebo-1] [GUI] [Msg] Added plugin [3D View] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [MinimalScene] from path [/opt/mamba/envs/ros/lib/gz-gui-8/plugins/libMinimalScene.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [GzSceneManager]
+[gazebo-1] [GUI] [Msg] Added plugin [Scene Manager] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [GzSceneManager] from path [/opt/mamba/envs/ros/lib/gz-sim-8/plugins/gui/libGzSceneManager.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [InteractiveViewControl]
+[gazebo-1] [GUI] [Msg] Camera view controller topic advertised on [/gui/camera/view_control]
+[gazebo-1] [GUI] [Msg] Camera reference visual topic advertised on [/gui/camera/view_control/reference_visual]
+[gazebo-1] [GUI] [Msg] Camera view control sensitivity advertised on [/gui/camera/view_control/sensitivity]
+[gazebo-1] [GUI] [Msg] Added plugin [Interactive view control] to main window
+[gazebo-1] [GUI] [Msg] Loaded plugin [InteractiveViewControl] from path [/opt/mamba/envs/ros/lib/gz-gui-8/plugins/libInteractiveViewControl.so]
+[gazebo-1] [GUI] [Dbg] [Application.cc:528] Loading plugin [WorldControl]
+[gazebo-1] [GUI] [Msg] Using world control service [/world/pick_place_cell/control]
+[gazebo-1] [GUI] [Msg] Listening to stats on [/world/pick_place_cell/stats]
+[gazebo-1] [GUI] [Dbg] [WorldControl.cc:237] Using an event to share WorldControl msgs with the server
+[gazebo-1] [GUI] [Wrn] [Application.cc:908] [QT] file::/WorldStats/WorldStats.qml:53:3: QML RowLayout: Binding loop detected for property "x"
+[gazebo-1] [GUI] [Wrn] [Ogre2RenderTarget.cc:668] Anti-aliasing level of '' is not supported; valid FSAA levels are: [ 0 ]. Setting to 1
+[gazebo-1] [GUI] [Msg] [Msg] Found no publishers on /stats, adding root stats topic
+[gazebo-1] [Msg] Found no publishers on /clock, adding root clock topic
+[gazebo-1] [Dbg] [SimulationRunner.cc:533] Creating PostUpdate worker threads: 3
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (1)
+[gazebo-1] [INFO] [1792939250.144565745] [gz_ros_control]: [gz_ros2_control] Fixed joint ['base_mount'] (Entity='46') is skipped.
+[gazebo-1] [INFO] [1792939250.145730506] [gz_ros_control]: Loading controller_manager
+[gazebo-1] [INFO] [1792939250.166315372] [controller_manager]: Using ROS clock for triggering controller manager cycles.
+[gazebo-1] [WARN] [1792939250.166361611] [controller_manager]: The resource manager is not yet initialized, will wait for the robot description to initialize it..
+[gazebo-1] [INFO] [1792939250.175580367] [controller_manager]: Subscribing to '/robot_description' topic for robot description.
+[gazebo-1] [WARN] [1792939250.176059591] [gz_ros_control]: Waiting RM to load and initialize hardware...
+[gazebo-1] [WARN] [1792939251.176212361] [controller_manager]: Waiting for data on 'robot_description' topic to finish initialization
+[gazebo-1] [INFO] [1792939251.281111838] [controller_manager]: Received robot description from topic.
+[gazebo-1] [INFO] [1792939251.281250283] [controller_manager]: Enforcing command limits is disabled. Command limits from URDF will be ignored.
+[gazebo-1] [INFO] [1792939251.298882031] [gz_ros_control]: The position_proportional_gain has been set to: 0.1
+[gazebo-1] [INFO] [1792939251.298946235] [gz_ros_control]: Loading joint: shoulder_pan_joint
+[gazebo-1] [INFO] [1792939251.298952269] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.298956195] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.298960804] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.298965131] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.298968172] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.298981394] [gz_ros_control]: Loading joint: shoulder_lift_joint
+[gazebo-1] [INFO] [1792939251.298984489] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.298987842] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.298990871] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.298994524] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.298997273] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299005504] [gz_ros_control]: Loading joint: elbow_joint
+[gazebo-1] [INFO] [1792939251.299009129] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299011952] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299015579] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299037916] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299044904] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299054320] [gz_ros_control]: Loading joint: wrist_1_joint
+[gazebo-1] [INFO] [1792939251.299058319] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299061062] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299063962] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299066984] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299069591] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299076764] [gz_ros_control]: Loading joint: wrist_2_joint
+[gazebo-1] [INFO] [1792939251.299079664] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299082354] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299086592] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299089514] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299092037] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299101144] [gz_ros_control]: Loading joint: wrist_3_joint
+[gazebo-1] [INFO] [1792939251.299104044] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299106982] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299109609] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299112214] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299114595] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299121539] [gz_ros_control]: Loading joint: gripper_finger_joint
+[gazebo-1] [INFO] [1792939251.299124821] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299127667] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299130226] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299132944] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299135585] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299142492] [gz_ros_control]: Loading joint: right_finger_joint
+[gazebo-1] [INFO] [1792939251.299145196] [gz_ros_control]: 	State:
+[gazebo-1] [INFO] [1792939251.299147754] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299150624] [gz_ros_control]: 		 velocity
+[gazebo-1] [INFO] [1792939251.299153537] [gz_ros_control]: 	Command:
+[gazebo-1] [INFO] [1792939251.299156136] [gz_ros_control]: 		 position
+[gazebo-1] [INFO] [1792939251.299255636] [controller_manager]: Initialize hardware 'ur' 
+[gazebo-1] [WARN] [1792939251.299270257] [controller_manager.hardware_component.system.ur]: Executor is not available during hardware component initialization for 'ur'. Skipping node creation!
+[gazebo-1] [INFO] [1792939251.299483604] [controller_manager]: Successful initialization of hardware 'ur'
+[gazebo-1] [INFO] [1792939251.299606539] [controller_manager]: Activating component 'ur'.
+[gazebo-1] [INFO] [1792939251.299641117] [resource_manager]: 'configure' hardware 'ur' 
+[gazebo-1] [INFO] [1792939251.299648077] [gz_ros_control]: System Successfully configured!
+[gazebo-1] [INFO] [1792939251.299656246] [resource_manager]: Successful 'configure' of hardware 'ur'
+[gazebo-1] [INFO] [1792939251.299661481] [resource_manager]: 'activate' hardware 'ur' 
+[gazebo-1] [INFO] [1792939251.299666055] [resource_manager]: Successful 'activate' of hardware 'ur'
+[gazebo-1] [WARN] [1792939251.299686552] [controller_manager]: Component 'ur' does not have read or write statistics initialized, skipping registration.
+[gazebo-1] [INFO] [1792939251.299692526] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
+[gazebo-1] [INFO] [1792939251.406310667] [controller_manager]: Loading controller : 'scaled_joint_trajectory_controller' of type 'ur_controllers/ScaledJointTrajectoryController'
+[gazebo-1] [INFO] [1792939251.406395195] [controller_manager]: Loading controller 'scaled_joint_trajectory_controller'
+[gazebo-1] [INFO] [1792939251.442095598] [controller_manager]: Controller 'scaled_joint_trajectory_controller' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[gazebo-1] [INFO] [1792939251.462637169] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not use speed scaling.
+[spawner-5] [INFO] [1792939251.473471208] [spawner_scaled_joint_trajectory_controller]: Loaded scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939251.477418164] [controller_manager]: Configuring controller: 'scaled_joint_trajectory_controller'
+[gazebo-1] [INFO] [1792939251.477613846] [scaled_joint_trajectory_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[gazebo-1] [INFO] [1792939251.477626675] [scaled_joint_trajectory_controller]: Command interfaces are [position] and state interfaces are [position velocity].
+[gazebo-1] [INFO] [1792939251.477641122] [scaled_joint_trajectory_controller]: Using 'splines' interpolation method.
+[gazebo-1] [INFO] [1792939251.492981045] [scaled_joint_trajectory_controller]: Action status changes will be monitored at 20.00 Hz.
+[gazebo-1] [INFO] [1792939251.507584054] [scaled_joint_trajectory_controller]: Setting initial scaling factor to 1.000000
+[gazebo-1] [INFO] [1792939251.507709668] [scaled_joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.
+[gazebo-1] [INFO] [1792939251.601001176] [controller_manager]: Activating controllers: [ scaled_joint_trajectory_controller ]
+[gazebo-1] [Dbg] [SystemManager.cc:80] Loaded system [gz_ros2_control::GazeboSimROS2ControlPlugin] for entity [16]
+[gazebo-1] [Dbg] [UserCommands.cc:1094] Created entity [16] named [ur]
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [base_link_parent_fixed_joint_lump__base_link_inertia_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [shoulder_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [upper_arm_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [forearm_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_1_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_2_link_collision] couldn't be created
+[gazebo-1] [Dbg] [SDFFeatures.cc:332] Mesh construction from an SDF has not been implemented yet for dartsim. Use AttachMeshShapeFeature to use mesh shapes.
+[gazebo-1] [Dbg] [SDFFeatures.cc:864] The geometry element of collision [wrist_3_link_collision] couldn't be created
+[gazebo-1] [Msg] Serving scene information on [/world/pick_place_cell/scene/info]
+[gazebo-1] [Msg] Serving graph information on [/world/pick_place_cell/scene/graph]
+[gazebo-1] [Msg] Serving full state on [/world/pick_place_cell/state]
+[gazebo-1] [Msg] Serving full state (async) on [/world/pick_place_cell/state_async]
+[gazebo-1] [Msg] Publishing scene information on [/world/pick_place_cell/scene/info]
+[gazebo-1] [Msg] Publishing entity deletions on [/world/pick_place_cell/scene/deletion]
+[gazebo-1] [Msg] Publishing state changes on [/world/pick_place_cell/state]
+[gazebo-1] [Msg] Publishing pose messages on [/world/pick_place_cell/pose/info]
+[gazebo-1] [Msg] Publishing dynamic pose messages on [/world/pick_place_cell/dynamic_pose/info]
+[gazebo-1] [Dbg] [EntityComponentManager.cc:1656] Updated state thread iterators: 2 threads processing around 27 entities each.
+[gazebo-1] [Dbg] [SimulationRunner.cc:560] Exiting postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:560] Exiting postupdate worker thread (1)
+[gazebo-1] [Dbg] [SimulationRunner.cc:533] Creating PostUpdate worker threads: 4
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (0)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (1)
+[gazebo-1] [Dbg] [SimulationRunner.cc:544] Creating postupdate worker thread (2)
+[gazebo-1] [WARN] [1792939252.211105083] [gz_ros_control]:  Desired controller update period (0.002 s) is slower than the gazebo simulation period (0.001 s).
+[gazebo-1] [INFO] [1792939252.213629938] [scaled_joint_trajectory_controller]: action_execution_timeout is disabled (set to 0.0)
+[gazebo-1] [INFO] [1792939252.215011984] [controller_manager]: Successfully switched controllers!
+[spawner-5] [INFO] [1792939252.220507384] [spawner_scaled_joint_trajectory_controller]: Configured and activated scaled_joint_trajectory_controller
+[spawner-4] [INFO] [1792939252.335543793] [spawner_joint_state_broadcaster]: waiting for service /controller_manager/list_controllers to become available...
+[INFO] [spawner-5]: process has finished cleanly [pid 18546]
+[gazebo-1] [INFO] [1792939253.889720072] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
+[gazebo-1] [INFO] [1792939253.889760734] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1792939253.902103410] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-4] [INFO] [1792939253.930907120] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[gazebo-1] [INFO] [1792939253.936521534] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
+[gazebo-1] [INFO] [1792939253.936583872] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[gazebo-1] [INFO] [1792939254.039254214] [controller_manager]: Activating controllers: [ joint_state_broadcaster ]
+[gazebo-1] [INFO] [1792939254.040749423] [controller_manager]: Successfully switched controllers!
+[spawner-4] [INFO] [1792939254.045478544] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-4]: process has finished cleanly [pid 18543]
+[spawner-6] [INFO] [1792939254.288642274] [spawner_gripper_controller]: waiting for service /controller_manager/list_controllers to become available...
+[gazebo-1] [INFO] [1792939257.049203401] [controller_manager]: Loading controller : 'gripper_controller' of type 'position_controllers/JointGroupPositionController'
+[gazebo-1] [INFO] [1792939257.049284259] [controller_manager]: Loading controller 'gripper_controller'
+[gazebo-1] [INFO] [1792939257.059587468] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file ~/ws/install/ur5_robotiq_bringup/share/ur5_robotiq_bringup/config/controllers_sg.yaml -p use_sim_time:=true --param use_sim_time:=true 
+[spawner-6] [INFO] [1792939257.099472507] [spawner_gripper_controller]: Loaded gripper_controller
+[gazebo-1] [INFO] [1792939257.103381636] [controller_manager]: Configuring controller: 'gripper_controller'
+[gazebo-1] [INFO] [1792939257.108622244] [gripper_controller]: configure successful
+[gazebo-1] [INFO] [1792939257.196520262] [controller_manager]: Activating controllers: [ gripper_controller ]
+[gazebo-1] [INFO] [1792939257.199887118] [gripper_controller]: activate successful
+[gazebo-1] [INFO] [1792939257.199967479] [controller_manager]: Successfully switched controllers!
+[spawner-6] [INFO] [1792939257.208009649] [spawner_gripper_controller]: Configured and activated gripper_controller
+[INFO] [spawner-6]: process has finished cleanly [pid 18549]
+[INFO] [move_group-8]: process started with pid [18742]
+[INFO] [rviz2-9]: process started with pid [18744]
+[rviz2-9] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[move_group-8] [INFO] [1792939259.963580228] [move_group.moveit.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[move_group-8] [INFO] [1792939259.967742428] [move_group.moveit.moveit.core.robot_model]: Loading robot model 'ur'...
+[move_group-8] [INFO] [1792939259.968320155] [move_group.moveit.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[move_group-8] [WARN] [1792939259.983210344] [move_group.moveit.moveit.core.robot_model]: Could not identify parent group for end-effector 'arm_eef'
+[move_group-8] [INFO] [1792939259.989242637] [move_group.moveit.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'ur_arm': 1 1 1 1 1 1
+[move_group-8] [INFO] [1792939260.095209760] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-8] [INFO] [1792939260.095318659] [move_group.moveit.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-8] [INFO] [1792939260.102165084] [move_group.moveit.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-8] [INFO] [1792939260.102590176] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-8] [INFO] [1792939260.102605561] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[move_group-8] [INFO] [1792939260.103337762] [move_group.moveit.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-8] [INFO] [1792939260.104483192] [move_group.moveit.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-8] [INFO] [1792939260.104539234] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[move_group-8] [INFO] [1792939260.108934117] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-8] [INFO] [1792939260.108952913] [move_group.moveit.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-8] [INFO] [1792939260.110630141] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-8] [INFO] [1792939260.112009879] [move_group.moveit.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-8] [WARN] [1792939260.112302280] [move_group.moveit.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-8] [ERROR] [1792939260.112314732] [move_group.moveit.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-8] [INFO] [1792939260.157592977] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[move_group-8] [INFO] [1792939260.160443431] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1792939260.161291844] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1792939260.161307261] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1792939260.162863650] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1792939260.163242781] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1792939260.163385068] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1792939260.163389530] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1792939260.163399885] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1792939260.165167824] [move_group]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1792939260.171474171] [move_group]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[move_group-8] [INFO] [1792939260.171780951] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[rviz2-9] [INFO] [1792939260.174707424] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-9] [INFO] [1792939260.175172253] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[move_group-8] [INFO] [1792939260.180085791] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1792939260.180106837] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1792939260.180752518] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1792939260.185259933] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1792939260.196708364] [move_group.moveit.moveit.planners.pilz.command_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-8] [INFO] [1792939260.196738024] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-8] [INFO] [1792939260.198109920] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [CIRC]
+[move_group-8] [INFO] [1792939260.198135804] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-8] [INFO] [1792939260.199101456] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [LIN]
+[move_group-8] [INFO] [1792939260.199124254] [move_group.moveit.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-8] [INFO] [1792939260.202850211] [move_group.moveit.moveit.planners.pilz.command_planner]: Registered Algorithm [PTP]
+[move_group-8] [INFO] [1792939260.206292828] [move_group.moveit.moveit.ros.planning_pipeline]: Successfully loaded planner 'Pilz Industrial Motion Planner'
+[move_group-8] [INFO] [1792939260.210700921] [move_group]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1792939260.210792516] [move_group]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[move_group-8] [INFO] [1792939260.210797340] [move_group]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1792939260.211867311] [move_group]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[move_group-8] [INFO] [1792939260.211885468] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1792939260.211909579] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[move_group-8] [INFO] [1792939260.211913416] [move_group]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1792939260.211923845] [move_group]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[move_group-8] [INFO] [1792939260.212664287] [move_group]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1792939260.216335529] [move_group]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[move_group-8] [INFO] [1792939260.216355254] [move_group]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[move_group-8] [INFO] [1792939260.218249593] [move_group]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[rviz2-9] [INFO] [1792939260.235089417] [rviz2]: Stereo is NOT SUPPORTED
+[move_group-8] [INFO] [1792939260.319899450] [move_group.moveit.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for scaled_joint_trajectory_controller
+[move_group-8] [INFO] [1792939260.321801836] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-8] [INFO] [1792939260.321837611] [move_group.moveit.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[move_group-8] [INFO] [1792939260.324129814] [move_group.moveit.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-8] [INFO] [1792939260.324503952] [move_group]: MoveGroup debug mode is ON
+[move_group-8] [INFO] [1792939260.400894644] [move_group.moveit.moveit.planners.pilz.move_group_sequence_action]: initialize move group sequence action
+[move_group-8] [INFO] [1792939260.406701431] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1792939260.406891568] [move_group.moveit.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-8] [INFO] [1792939260.411693732] [move_group.moveit.moveit.ros.move_group.executable]: 
+[move_group-8] 
+[move_group-8] ********************************************************
+[move_group-8] * MoveGroup using: 
+[move_group-8] *     - apply_planning_scene_service
+[move_group-8] *     - clear_octomap_service
+[move_group-8] *     - get_group_urdf
+[move_group-8] *     - load_geometry_from_file
+[move_group-8] *     - CartesianPathService
+[move_group-8] *     - execute_trajectory_action
+[move_group-8] *     - get_planning_scene_service
+[move_group-8] *     - kinematics_service
+[move_group-8] *     - move_action
+[move_group-8] *     - motion_plan_service
+[move_group-8] *     - query_planners_service
+[move_group-8] *     - state_validation_service
+[move_group-8] *     - save_geometry_to_file
+[move_group-8] *     - SequenceAction
+[move_group-8] *     - SequenceService
+[move_group-8] ********************************************************
+[move_group-8] 
+[move_group-8] [INFO] [1792939260.411745263] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context using pipeline ompl
+[move_group-8] [INFO] [1792939260.411754098] [move_group.moveit.moveit.ros.move_group.context]: MoveGroup context initialization complete
+[move_group-8] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-8] Loading 'move_group/ClearOctomapService'...
+[move_group-8] Loading 'move_group/GetUrdfService'...
+[move_group-8] Loading 'move_group/LoadGeometryFromFileService'...
+[move_group-8] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-8] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-8] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-8] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-8] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-8] Loading 'move_group/MoveGroupPlanService'...
+[move_group-8] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-8] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-8] Loading 'move_group/SaveGeometryToFileService'...
+[move_group-8] Loading 'pilz_industrial_motion_planner/MoveGroupSequenceAction'...
+[move_group-8] Loading 'pilz_industrial_motion_planner/MoveGroupSequenceService'...
+[move_group-8] 
+[move_group-8] You can start planning now!
+[move_group-8] 
+[rviz2-9] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-9]          at line 321 in /opt/mamba/envs/ros/include/class_loader/class_loader/class_loader_core.hpp
+[rviz2-9] [ERROR] [1792939263.525449258] [moveit_509946918.moveit.ros.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-9] [INFO] [1792939263.571545047] [moveit_509946918.moveit.ros.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-9] [INFO] [1792939263.634570386] [moveit_509946918.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[rviz2-9] [INFO] [1792939263.634622251] [moveit_509946918.moveit.core.robot_model]: Loading robot model 'ur'...
+[rviz2-9] [INFO] [1792939263.634633725] [moveit_509946918.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[rviz2-9] [WARN] [1792939263.651652193] [moveit_509946918.moveit.core.robot_model]: Could not identify parent group for end-effector 'arm_eef'
+[rviz2-9] [INFO] [1792939263.673872268] [moveit_509946918.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'ur_arm': 1 1 1 1 1 1
+[rviz2-9] [INFO] [1792939263.746369259] [moveit_509946918.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-9] [INFO] [1792939263.747339285] [moveit_509946918.moveit.ros.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-9] [INFO] [1792939264.028436192] [interactive_marker_display_94923231636608]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-9] [INFO] [1792939264.040388472] [moveit_509946918.moveit.ros.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-9] [INFO] [1792939264.042331093] [moveit_509946918.moveit.ros.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-9] [INFO] [1792939264.052250697] [moveit_509946918.moveit.ros.motion_planning_frame]: group gripper
+[rviz2-9] [INFO] [1792939264.052272449] [moveit_509946918.moveit.ros.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-9] [INFO] [1792939264.092936747] [moveit_509946918.moveit.ros.move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-9] [INFO] [1792939264.096626524] [moveit_509946918.moveit.ros.motion_planning_frame]: group gripper
+[rviz2-9] [INFO] [1792939264.120601890] [interactive_marker_display_94923231636608]: Sending request for interactive markers
+[rviz2-9] [INFO] [1792939264.165195420] [interactive_marker_display_94923231636608]: Service response received for initialization
+[INFO] [moveit_executor-10]: process started with pid [18856]
+[moveit_executor-10] [INFO] [1792939277.898936089] [moveit_2529117708.moveit.py.cpp_initializer]: Initialize rclcpp
+[moveit_executor-10] [INFO] [1792939277.899452699] [moveit_2529117708.moveit.py.cpp_initializer]: Initialize node parameters
+[moveit_executor-10] [INFO] [1792939277.899465498] [moveit_2529117708.moveit.py.cpp_initializer]: Initialize node and executor
+[moveit_executor-10] [INFO] [1792939277.909064233] [moveit_2529117708.moveit.py.cpp_initializer]: Spin separate thread
+[moveit_executor-10] [INFO] [1792939277.914565570] [moveit_2529117708.moveit.ros.rdf_loader]: Loaded robot model in 0 seconds
+[moveit_executor-10] [INFO] [1792939277.914609599] [moveit_2529117708.moveit.core.robot_model]: Loading robot model 'ur'...
+[moveit_executor-10] [INFO] [1792939277.914621957] [moveit_2529117708.moveit.core.robot_model]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[moveit_executor-10] [WARN] [1792939277.921716374] [moveit_2529117708.moveit.core.robot_model]: Could not identify parent group for end-effector 'arm_eef'
+[moveit_executor-10] [INFO] [1792939277.925363884] [moveit_2529117708.moveit.kinematics.kdl_kinematics_plugin]: Joint weights for group 'ur_arm': 1 1 1 1 1 1
+[moveit_executor-10] [INFO] [1792939277.965222900] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[moveit_executor-10] [INFO] [1792939277.965337464] [moveit_2529117708.moveit.ros.moveit_cpp]: Listening to 'joint_states' for joint states
+[moveit_executor-10] [INFO] [1792939277.967605080] [moveit_2529117708.moveit.ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[moveit_executor-10] [INFO] [1792939277.968076088] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[moveit_executor-10] [INFO] [1792939277.968093236] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Stopping existing planning scene publisher.
+[moveit_executor-10] [INFO] [1792939277.969618041] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[moveit_executor-10] [INFO] [1792939277.972722358] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[moveit_executor-10] [INFO] [1792939277.974150210] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Starting planning scene monitor
+[moveit_executor-10] [INFO] [1792939277.974469076] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Listening to '/planning_scene'
+[moveit_executor-10] [INFO] [1792939277.974481279] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[moveit_executor-10] [INFO] [1792939277.974769947] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Listening to 'collision_object'
+[moveit_executor-10] [INFO] [1792939277.975052705] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[moveit_executor-10] [WARN] [1792939277.975308016] [moveit_2529117708.moveit.ros.occupancy_map_monitor]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[moveit_executor-10] [ERROR] [1792939277.975320632] [moveit_2529117708.moveit.ros.occupancy_map_monitor]: No 3D sensor plugin(s) defined for octomap updates
+[moveit_executor-10] [INFO] [1792939278.055601145] [moveit_2529117708.moveit.ros.planning_pipeline]: Successfully loaded planner 'OMPL'
+[moveit_executor-10] [INFO] [1792939278.066649239] [moveit_py]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939278.072223755] [moveit_py]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939278.072277517] [moveit_py]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[moveit_executor-10] [INFO] [1792939278.077972224] [moveit_py]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[moveit_executor-10] [INFO] [1792939278.077999274] [moveit_py]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939278.078069008] [moveit_py]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939278.078079925] [moveit_py]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939278.078096298] [moveit_py]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939278.080701259] [moveit_py]: Try loading adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939278.092797601] [moveit_py]: Loaded adapter 'default_planning_response_adapters/AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939278.092820027] [moveit_py]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[moveit_executor-10] [INFO] [1792939278.365856236] [moveit_py]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[moveit_executor-10] [INFO] [1792939278.365903040] [moveit_py]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939278.367714839] [moveit_py]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939278.375590723] [moveit_2529117708.moveit.planners.pilz.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[moveit_executor-10] [INFO] [1792939278.387097091] [moveit_2529117708.moveit.planners.pilz.command_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[moveit_executor-10] [INFO] [1792939278.387146115] [moveit_2529117708.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[moveit_executor-10] [INFO] [1792939278.392093407] [moveit_2529117708.moveit.planners.pilz.command_planner]: Registered Algorithm [CIRC]
+[moveit_executor-10] [INFO] [1792939278.392138290] [moveit_2529117708.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[moveit_executor-10] [INFO] [1792939278.394832349] [moveit_2529117708.moveit.planners.pilz.command_planner]: Registered Algorithm [LIN]
+[moveit_executor-10] [INFO] [1792939278.394880259] [moveit_2529117708.moveit.planners.pilz.command_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[moveit_executor-10] [INFO] [1792939278.398668600] [moveit_2529117708.moveit.planners.pilz.command_planner]: Registered Algorithm [PTP]
+[moveit_executor-10] [INFO] [1792939278.399255265] [moveit_2529117708.moveit.ros.planning_pipeline]: Successfully loaded planner 'Pilz Industrial Motion Planner'
+[moveit_executor-10] [INFO] [1792939278.402333016] [moveit_py]: Try loading adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939278.403462493] [moveit_py]: Loaded adapter 'default_planning_request_adapters/ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939278.403513053] [moveit_py]: Try loading adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[moveit_executor-10] [INFO] [1792939278.403784946] [moveit_py]: Loaded adapter 'default_planning_request_adapters/ValidateWorkspaceBounds'
+[moveit_executor-10] [INFO] [1792939278.403792712] [moveit_py]: Try loading adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939278.403811336] [moveit_py]: Loaded adapter 'default_planning_request_adapters/CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939278.403815051] [moveit_py]: Try loading adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939278.403843361] [moveit_py]: Loaded adapter 'default_planning_request_adapters/CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939278.406724408] [moveit_py]: Try loading adapter 'default_planning_response_adapters/ValidateSolution'
+[moveit_executor-10] [INFO] [1792939278.409404795] [moveit_py]: Loaded adapter 'default_planning_response_adapters/ValidateSolution'
+[moveit_executor-10] [INFO] [1792939278.409446461] [moveit_py]: Try loading adapter 'default_planning_response_adapters/DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939278.410770655] [moveit_py]: Loaded adapter 'default_planning_response_adapters/DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939278.543312217] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Added FollowJointTrajectory controller for scaled_joint_trajectory_controller
+[moveit_executor-10] [INFO] [1792939278.548934137] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939278.549007996] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939278.560079297] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[moveit_executor-10] [WARN] [1792939278.605508081] [rcl.logging_rosout]: Publisher already registered for node name: 'moveit_py'. If this is due to multiple nodes with the same name then all logs for the logger named 'moveit_py' will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[moveit_executor-10] [INFO] [1792939278.994700658] [moveit_executor]: MoveItPy listo - grupo de planificación: ur_arm
+[moveit_executor-10] [INFO] [1792939282.000251356] [moveit_executor]: [GRIPPER] abrir (0.04 m)
+[moveit_executor-10] [INFO] [1792939283.501081888] [moveit_executor]: [PLAN] estado con nombre "ready" ...
+[moveit_executor-10] [INFO] [1792939283.501344945] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939283.501425241] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939283.501433234] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939283.501456162] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939283.501489751] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [WARN] [1792939283.501679303] [moveit_2529117708.moveit.planners.ompl.planning_context_manager]: Cannot find planning configuration for group 'ur_arm' using planner 'RRTConnectkConfigDefault'. Will use defaults instead.
+[moveit_executor-10] [INFO] [1792939283.507741460] [moveit_2529117708.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[moveit_executor-10] [INFO] [1792939283.507863569] [moveit_py]: Calling Planner 'OMPL'
+[moveit_executor-10] [INFO] [1792939283.555297256] [moveit_py]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939283.557156646] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939283.558284686] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939283.561159829] [moveit_executor]: [PLAN] estado con nombre "ready": OK en 0.06s (23 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939283.561449386] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.561488411] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.561543612] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.561560549] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.561599731] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939283.563732520] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939283.563807814] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.563855578] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939283.566403665] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939283.567750866] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939283.567802623] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939283.568587058] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939283.568609474] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939287.800096501] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939287.819137259] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939287.822068388] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939287.827673560] [moveit_executor]: [EXEC] estado con nombre "ready": completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939288.439693928] [moveit_executor]: [ESCENA] Obstáculo "pared" agregado a la planning scene
+[moveit_executor-10] [INFO] [1792939288.446159708] [moveit_executor]: [PLAN] pose TCP sobre PICK (0.45, 0.25, 0.25) ...
+[moveit_executor-10] [INFO] [1792939288.446406632] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939288.446466007] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939288.446470422] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939288.446484467] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939288.446495650] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [WARN] [1792939288.446555194] [moveit_2529117708.moveit.planners.ompl.planning_context_manager]: Cannot find planning configuration for group 'ur_arm' using planner 'RRTConnectkConfigDefault'. Will use defaults instead.
+[moveit_executor-10] [INFO] [1792939288.446742493] [moveit_2529117708.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[moveit_executor-10] [INFO] [1792939288.446790870] [moveit_py]: Calling Planner 'OMPL'
+[moveit_executor-10] [INFO] [1792939288.500266932] [moveit_py]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939288.502725756] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939288.503740447] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939288.509264462] [moveit_executor]: [PLAN] pose TCP sobre PICK (0.45, 0.25, 0.25): OK en 0.06s (7 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939288.509451799] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511145696] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511186899] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511196279] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511222630] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939288.511276893] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939288.511298879] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511312984] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939288.511435513] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939288.514549135] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939288.514588481] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939288.516207794] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939288.516333386] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939289.543039646] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939289.569618135] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939289.572276692] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939289.575645235] [moveit_executor]: [EXEC] pose TCP sobre PICK (0.45, 0.25, 0.25): completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939289.576214315] [moveit_executor]: [PLAN] descenso lineal Pilz LIN a z=0.12 ...
+[moveit_executor-10] [INFO] [1792939289.576387670] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939289.576450530] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939289.576455561] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939289.576490975] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939289.576504283] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939289.576599100] [moveit_py]: Calling Planner 'Pilz Industrial Motion Planner'
+[moveit_executor-10] [INFO] [1792939289.576624817] [moveit_2529117708.moveit.planners.pilz.trajectory_generator]: Generating LIN trajectory...
+[moveit_executor-10] [INFO] [1792939289.582407660] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939289.583368230] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939289.586279304] [moveit_executor]: [PLAN] descenso lineal Pilz LIN a z=0.12: OK en 0.01s (12 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939289.589963488] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.589991331] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.590041888] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.590383630] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.590419375] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939289.593945170] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939289.593999957] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.594049877] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939289.594207784] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939289.595746487] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939289.595810940] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939289.597647114] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939289.597661477] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939291.720839127] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939291.747910299] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939291.755805301] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939291.756494524] [moveit_executor]: [EXEC] descenso lineal Pilz LIN a z=0.12: completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939291.757416965] [moveit_executor]: [GRIPPER] cerrar (0.02 m)
+[moveit_executor-10] [INFO] [1792939293.263847813] [moveit_executor]: [PLAN] subida a z=0.30 ...
+[moveit_executor-10] [INFO] [1792939293.264069546] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939293.264135736] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939293.264140768] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939293.264155040] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939293.264166771] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [INFO] [1792939293.264301305] [moveit_py]: Calling Planner 'Pilz Industrial Motion Planner'
+[moveit_executor-10] [INFO] [1792939293.264312966] [moveit_2529117708.moveit.planners.pilz.trajectory_generator]: Generating LIN trajectory...
+[moveit_executor-10] [INFO] [1792939293.265677283] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939293.266143121] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939293.271063142] [moveit_executor]: [PLAN] subida a z=0.30: OK en 0.01s (15 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939293.272275037] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.272306045] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.272339191] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.272349568] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.272377285] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939293.282038450] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939293.282107972] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.282134682] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939293.283916165] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939293.285951387] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939293.285982769] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939293.286303065] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939293.286315879] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939296.136877585] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939296.138975172] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939296.139109239] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939296.140008936] [moveit_executor]: [EXEC] subida a z=0.30: completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939296.141202045] [moveit_executor]: [PLAN] pose sobre PLACE (0.45, -0.30, 0.20) esquivando la pared ...
+[moveit_executor-10] [INFO] [1792939296.141380260] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939296.141440227] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939296.141444598] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939296.141459457] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939296.141471266] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [WARN] [1792939296.142129049] [moveit_2529117708.moveit.planners.ompl.planning_context_manager]: Cannot find planning configuration for group 'ur_arm' using planner 'RRTConnectkConfigDefault'. Will use defaults instead.
+[moveit_executor-10] [INFO] [1792939296.142662111] [moveit_2529117708.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[moveit_executor-10] [INFO] [1792939296.142737961] [moveit_py]: Calling Planner 'OMPL'
+[moveit_executor-10] [INFO] [1792939296.201119282] [moveit_py]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939296.201711525] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939296.202183102] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939296.211561707] [moveit_executor]: [PLAN] pose sobre PLACE (0.45, -0.30, 0.20) esquivando la pared: OK en 0.07s (16 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939296.212520447] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.212562140] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.212596393] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.212606486] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.212634428] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939296.224199722] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939296.225055169] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.225417305] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939296.225569635] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939296.226955636] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939296.226988668] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939296.227593403] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939296.227605216] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939299.367483548] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939299.382125475] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939299.384501216] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939299.385404331] [moveit_executor]: [EXEC] pose sobre PLACE (0.45, -0.30, 0.20) esquivando la pared: completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939299.389175534] [moveit_executor]: [GRIPPER] abrir (0.04 m)
+[moveit_executor-10] [INFO] [1792939300.890259018] [moveit_executor]: [PLAN] estado con nombre "home" ...
+[moveit_executor-10] [INFO] [1792939300.890483273] [moveit_py]: Calling PlanningRequestAdapter 'ResolveConstraintFrames'
+[moveit_executor-10] [INFO] [1792939300.890548284] [moveit_py]: Calling PlanningRequestAdapter 'ValidateWorkspaceBounds'
+[moveit_executor-10] [WARN] [1792939300.891545415] [moveit_2529117708.moveit.ros.validate_workspace_bounds]: It looks like the planning volume was not specified. Using default values.
+[moveit_executor-10] [INFO] [1792939300.892586477] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateBounds'
+[moveit_executor-10] [INFO] [1792939300.892645372] [moveit_py]: Calling PlanningRequestAdapter 'CheckStartStateCollision'
+[moveit_executor-10] [WARN] [1792939300.892763488] [moveit_2529117708.moveit.planners.ompl.planning_context_manager]: Cannot find planning configuration for group 'ur_arm' using planner 'RRTConnectkConfigDefault'. Will use defaults instead.
+[moveit_executor-10] [INFO] [1792939300.892981410] [moveit_2529117708.moveit.planners.ompl.model_based_planning_context]: Planner configuration 'ur_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[moveit_executor-10] [INFO] [1792939300.893080892] [moveit_py]: Calling Planner 'OMPL'
+[moveit_executor-10] [INFO] [1792939300.956259920] [moveit_py]: Calling PlanningResponseAdapter 'AddTimeOptimalParameterization'
+[moveit_executor-10] [INFO] [1792939300.956777156] [moveit_py]: Calling PlanningResponseAdapter 'ValidateSolution'
+[moveit_executor-10] [INFO] [1792939300.965736836] [moveit_py]: Calling PlanningResponseAdapter 'DisplayMotionPath'
+[moveit_executor-10] [INFO] [1792939300.969772906] [moveit_executor]: [PLAN] estado con nombre "home": OK en 0.08s (14 puntos) -> ejecutando
+[moveit_executor-10] [INFO] [1792939300.972663556] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.972717764] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.972753134] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.972763501] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.972796491] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.05
+[moveit_executor-10] [INFO] [1792939300.974536521] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Starting trajectory execution ...
+[moveit_executor-10] [INFO] [1792939300.974596460] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.974617320] [moveit_2529117708.moveit.plugins.simple_controller_manager]: Returned 1 controllers in list
+[moveit_executor-10] [INFO] [1792939300.974753593] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[gazebo-1] [INFO] [1792939300.985999939] [scaled_joint_trajectory_controller]: Received new action goal
+[gazebo-1] [INFO] [1792939300.986070392] [scaled_joint_trajectory_controller]: Accepted new action goal
+[moveit_executor-10] [INFO] [1792939300.989106926] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[moveit_executor-10] [INFO] [1792939300.989126565] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[gazebo-1] [INFO] [1792939303.639048254] [scaled_joint_trajectory_controller]: Goal reached, success!
+[moveit_executor-10] [INFO] [1792939303.639598975] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'scaled_joint_trajectory_controller' successfully finished
+[moveit_executor-10] [INFO] [1792939303.639732929] [moveit_2529117708.moveit.ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[moveit_executor-10] [INFO] [1792939303.640445006] [moveit_executor]: [EXEC] estado con nombre "home": completado (SUCCEEDED)
+[moveit_executor-10] [INFO] [1792939303.640733215] [moveit_executor]: Secuencia MoveIt finalizada
+[moveit_executor-10] [INFO] [1792939304.689430956] [moveit_2529117708.moveit.ros.moveit_cpp]: Deleting MoveItCpp
+[moveit_executor-10] [INFO] [1792939304.739605852] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[moveit_executor-10] [INFO] [1792939304.741854895] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Stopping world geometry monitor
+[moveit_executor-10] [INFO] [1792939304.743710533] [moveit_2529117708.moveit.ros.planning_scene_monitor]: Stopping planning scene monitor
+[INFO] [moveit_executor-10]: process has finished cleanly [pid 18856]

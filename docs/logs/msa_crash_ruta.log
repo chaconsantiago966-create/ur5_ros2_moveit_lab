@@ -1,0 +1,43 @@
+[INFO] [launch]: All log files can be found below /root/.ros/log/2026-10-25-08-51-08-953781-vm-10277
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [moveit_setup_assistant-1]: process started with pid [10280]
+[moveit_setup_assistant-1] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-root'
+[moveit_setup_assistant-1] terminate called after throwing an instance of 'std::length_error'
+[moveit_setup_assistant-1]   what():  basic_string::_M_create
+[moveit_setup_assistant-1] Stack trace (most recent call last):
+[moveit_setup_assistant-1] #31   Object "/opt/mamba/envs/ros/lib/libQt5Gui.so.5.15.15", at 0x7f89532f6770, in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>)
+[moveit_setup_assistant-1] #30   Object "/opt/mamba/envs/ros/lib/libQt5Gui.so.5.15.15", at 0x7f8953307c64, in QGuiApplicationPrivate::processKeyEvent(QWindowSystemInterfacePrivate::KeyEvent*)
+[moveit_setup_assistant-1] #29   Object "/opt/mamba/envs/ros/lib/libQt5Core.so.5.15.15", at 0x7f8952dc32f3, in QCoreApplication::notifyInternal2(QObject*, QEvent*)
+[moveit_setup_assistant-1] #28   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f895396a021, in QApplicationPrivate::notify_helper(QObject*, QEvent*)
+[moveit_setup_assistant-1] #27   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f89539a3766, in 
+[moveit_setup_assistant-1] #26   Object "/opt/mamba/envs/ros/lib/libQt5Core.so.5.15.15", at 0x7f8952dc32f3, in QCoreApplication::notifyInternal2(QObject*, QEvent*)
+[moveit_setup_assistant-1] #25   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f895396e0a2, in QApplication::notify(QObject*, QEvent*)
+[moveit_setup_assistant-1] #24   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f895396a021, in QApplicationPrivate::notify_helper(QObject*, QEvent*)
+[moveit_setup_assistant-1] #23   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953993a4c, in QWidget::event(QEvent*)
+[moveit_setup_assistant-1] #22   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953a34d87, in QLineEdit::keyPressEvent(QKeyEvent*)
+[moveit_setup_assistant-1] #21   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953a3cb4d, in QWidgetLineControl::processKeyEvent(QKeyEvent*)
+[moveit_setup_assistant-1] #20   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953a3ad70, in QWidgetLineControl::finishChange(int, bool, bool)
+[moveit_setup_assistant-1] #19   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953a38ca6, in QWidgetLineControl::textChanged(QString const&)
+[moveit_setup_assistant-1] #18   Object "/opt/mamba/envs/ros/lib/libQt5Core.so.5.15.15", at 0x7f8952de0242, in 
+[moveit_setup_assistant-1] #17   Object "/opt/mamba/envs/ros/lib/libQt5Widgets.so.5.15.15", at 0x7f8953a34901, in QLineEdit::textChanged(QString const&)
+[moveit_setup_assistant-1] #16   Object "/opt/mamba/envs/ros/lib/libQt5Core.so.5.15.15", at 0x7f8952de0242, in 
+[moveit_setup_assistant-1] #15   Object "/opt/mamba/envs/ros/lib/libmoveit_setup_framework.so", at 0x7f895470a9e2, in moveit_setup::LoadPathWidget::pathChanged(QString const&)
+[moveit_setup_assistant-1] #14   Object "/opt/mamba/envs/ros/lib/libQt5Core.so.5.15.15", at 0x7f8952de0242, in 
+[moveit_setup_assistant-1] #13   Object "/opt/mamba/envs/ros/lib/libmoveit_setup_core_plugins.so", at 0x7f893ed2491b, in moveit_setup::core::StartScreenWidget::onUrdfPathChanged(QString const&)
+[moveit_setup_assistant-1] #12   Object "/opt/mamba/envs/ros/lib/libmoveit_setup_core_plugins.so", at 0x7f893ed22aed, in moveit_setup::core::StartScreen::loadURDFFile(std::filesystem::__cxx11::path const&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+[moveit_setup_assistant-1] #11   Object "/opt/mamba/envs/ros/lib/libmoveit_setup_framework.so", at 0x7f89546ab767, in moveit_setup::URDFConfig::load()
+[moveit_setup_assistant-1] #10   Object "/opt/mamba/envs/ros/lib/libmoveit_rdf_loader.so.2.12.4", at 0x7f89541b45d7, in rdf_loader::RDFLoader::loadFileToString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+[moveit_setup_assistant-1] #9    Source "/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300741325/work/build/x86_64-conda-linux-gnu/libstdc++-v3/include/bits/basic_string.tcc", line 378, in reserve [0x7f895296bf06]
+[moveit_setup_assistant-1] #8    Source "/home/conda/feedstock_root/build_artifacts/gcc_compilers_1790300741325/work/build/x86_64-conda-linux-gnu/libstdc++-v3/include/bits/basic_string.tcc", line 149, in _M_create [0x7f895296b1d8]
+[moveit_setup_assistant-1] #7    Source "../../../../../libstdc++-v3/src/c++11/functexcept.cc", line 81, in __throw_length_error [0x7f89528b5be0]
+[moveit_setup_assistant-1] #6    Source "../../../../libstdc++-v3/libsupc++/eh_throw.cc", line 98, in __cxa_throw [0x7f89528c5cb6]
+[moveit_setup_assistant-1] #5    Source "../../../../libstdc++-v3/libsupc++/eh_terminate.cc", line 58, in terminate [0x7f89528b284c]
+[moveit_setup_assistant-1] #4    Source "../../../../libstdc++-v3/libsupc++/eh_terminate.cc", line 48, in __terminate [0x7f89528c5a19]
+[moveit_setup_assistant-1] #3    Source "../../../../libstdc++-v3/libsupc++/vterminate.cc", line 95, in __verbose_terminate_handler [0x7f89528b2cd1]
+[moveit_setup_assistant-1] #2    Source "./stdlib/abort.c", line 79, in abort [0x7f89524288fe]
+[moveit_setup_assistant-1] #1    Source "../sysdeps/posix/raise.c", line 26, in raise [0x7f895244527d]
+[moveit_setup_assistant-1] #0  | Source "./nptl/pthread_kill.c", line 89, in __pthread_kill_internal
+[moveit_setup_assistant-1]     | Source "./nptl/pthread_kill.c", line 78, in __pthread_kill_implementation
+[moveit_setup_assistant-1]       Source "./nptl/pthread_kill.c", line 44, in __pthread_kill [0x7f895249ec0c]
+[moveit_setup_assistant-1] Aborted (Signal sent by tkill() 10280 0)
+[ERROR] [moveit_setup_assistant-1]: process has died [pid 10280, exit code -6, cmd '/opt/mamba/envs/ros/lib/moveit_setup_assistant/moveit_setup_assistant --ros-args'].

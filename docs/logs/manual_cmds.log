@@ -1,0 +1,68 @@
+### 1) Identificación de tópicos/acciones de control
+$ ros2 control list_controllers
+[INFO] [1792936197.727194730] [_ros2cli_9933]: waiting for service /controller_manager/list_controllers to become available...
+joint_state_broadcaster            joint_state_broadcaster/JointStateBroadcaster      active
+gripper_controller                 position_controllers/JointGroupPositionController  active
+scaled_joint_trajectory_controller ur_controllers/ScaledJointTrajectoryController     active
+
+$ ros2 topic list | grep -E 'commands|joint_trajectory|joint_states'
+/dynamic_joint_states
+/gripper_controller/commands
+/joint_states
+/scaled_joint_trajectory_controller/controller_state
+/scaled_joint_trajectory_controller/joint_trajectory
+/scaled_joint_trajectory_controller/speed_scaling_input
+/scaled_joint_trajectory_controller/transition_event
+
+$ ros2 topic info /gripper_controller/commands
+Type: std_msgs/msg/Float64MultiArray
+Publisher count: 0
+Subscription count: 1
+
+### 2) Brazo: trayectoria por tópico
+$ ros2 topic pub --once /scaled_joint_trajectory_controller/joint_trajectory trajectory_msgs/msg/JointTrajectory "{joint_names: ['shoulder_pan_joint','shoulder_lift_joint','elbow_joint','wrist_1_joint','wrist_2_joint','wrist_3_joint'], points: [{positions: [0.8, -1.2, 1.4, -1.77, -1.57, 0.0], time_from_start: {sec: 3}}]}"
+publisher: beginning loop
+publishing #1: trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint'], points=[trajectory_msgs.msg.JointTrajectoryPoint(positions=[0.8, -1.2, 1.4, -1.77, -1.57, 0.0], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=3, nanosec=0))])
+
+### 3) Gripper: abrir / intermedio / cerrar
+$ ros2 topic pub --once /gripper_controller/commands std_msgs/msg/Float64MultiArray '{data: [0.04, 0.04]}'
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+publisher: beginning loop
+publishing #1: std_msgs.msg.Float64MultiArray(layout=std_msgs.msg.MultiArrayLayout(dim=[], data_offset=0), data=[0.04, 0.04])
+
+$ ros2 topic pub --once /gripper_controller/commands std_msgs/msg/Float64MultiArray '{data: [0.02, 0.02]}'
+publisher: beginning loop
+publishing #1: std_msgs.msg.Float64MultiArray(layout=std_msgs.msg.MultiArrayLayout(dim=[], data_offset=0), data=[0.02, 0.02])
+
+$ ros2 topic pub --once /gripper_controller/commands std_msgs/msg/Float64MultiArray '{data: [0.004, 0.004]}'
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+Waiting for at least 1 matching subscription(s)...
+publisher: beginning loop
+publishing #1: std_msgs.msg.Float64MultiArray(layout=std_msgs.msg.MultiArrayLayout(dim=[], data_offset=0), data=[0.004, 0.004])
+
+### 4) Brazo: otro punto
+$ ros2 topic pub --once /scaled_joint_trajectory_controller/joint_trajectory trajectory_msgs/msg/JointTrajectory "{joint_names: ['shoulder_pan_joint','shoulder_lift_joint','elbow_joint','wrist_1_joint','wrist_2_joint','wrist_3_joint'], points: [{positions: [-0.8, -1.8, 1.9, -1.67, -1.57, 1.0], time_from_start: {sec: 3}}]}"
+publisher: beginning loop
+publishing #1: trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint'], points=[trajectory_msgs.msg.JointTrajectoryPoint(positions=[-0.8, -1.8, 1.9, -1.67, -1.57, 1.0], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=3, nanosec=0))])
+
+$ ros2 topic echo --once /joint_states --field position
+A message was lost!!!
+	total count change:1
+	total count: 1---
+array('d', [1.9000000000010735, 0.003999999999999958, 0.004000000000000043, -1.7999999999998317, -0.799999999999999, -1.6699999999972226, -1.5700000000000036, 0.999999999999999])
+---
+
+### 5) Brazo a HOME y gripper abierto
+$ ros2 topic pub --once /scaled_joint_trajectory_controller/joint_trajectory trajectory_msgs/msg/JointTrajectory "{joint_names: ['shoulder_pan_joint','shoulder_lift_joint','elbow_joint','wrist_1_joint','wrist_2_joint','wrist_3_joint'], points: [{positions: [0.0, -1.57, 1.57, -1.57, -1.57, 0.0], time_from_start: {sec: 3}}]}"
+Waiting for at least 1 matching subscription(s)...
+publisher: beginning loop
+publishing #1: trajectory_msgs.msg.JointTrajectory(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id=''), joint_names=['shoulder_pan_joint', 'shoulder_lift_joint', 'elbow_joint', 'wrist_1_joint', 'wrist_2_joint', 'wrist_3_joint'], points=[trajectory_msgs.msg.JointTrajectoryPoint(positions=[0.0, -1.57, 1.57, -1.57, -1.57, 0.0], velocities=[], accelerations=[], effort=[], time_from_start=builtin_interfaces.msg.Duration(sec=3, nanosec=0))])
+
+$ ros2 topic pub --once /gripper_controller/commands std_msgs/msg/Float64MultiArray '{data: [0.04, 0.04]}'
+publisher: beginning loop
+publishing #1: std_msgs.msg.Float64MultiArray(layout=std_msgs.msg.MultiArrayLayout(dim=[], data_offset=0), data=[0.04, 0.04])
+
+FIN_MANUAL
