@@ -4,7 +4,7 @@
   <name>ur5_pick_place</name>
   <version>1.0.0</version>
   <description>Rutina Pick and Place simulada (UR5 + gripper simple) con entradas/salidas digitales simuladas mediante tópicos y servicios.</description>
-  <maintainer email="chaconsantiago966@users.noreply.github.com">Santiago Chacón</maintainer>
+  <maintainer email="chaconsantiago966@gmail.com">Santiago Chacón</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>

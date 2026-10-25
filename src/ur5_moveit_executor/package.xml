@@ -4,7 +4,7 @@
   <name>ur5_moveit_executor</name>
   <version>1.0.0</version>
   <description>Nodo que ejecuta trayectorias con MoveIt 2 (MoveItPy) sobre el UR5 + gripper simulado en Gazebo, usando la configuración generada con el MoveIt Setup Assistant.</description>
-  <maintainer email="chaconsantiago966@users.noreply.github.com">Santiago Chacón</maintainer>
+  <maintainer email="chaconsantiago966@gmail.com">Santiago Chacón</maintainer>
   <license>MIT</license>
 
   <exec_depend>rclpy</exec_depend>

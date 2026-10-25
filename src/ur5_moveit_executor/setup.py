@@ -19,7 +19,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Santiago Chacón',
-    maintainer_email='chaconsantiago966@users.noreply.github.com',
+    maintainer_email='chaconsantiago966@gmail.com',
     description='Ejecución de trayectorias con MoveItPy sobre UR5 en Gazebo',
     license='MIT',
     entry_points={'console_scripts': [

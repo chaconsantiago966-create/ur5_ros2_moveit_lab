@@ -6,7 +6,7 @@ moveit_setup_assistant_config:
     relative_path: config/ur.srdf
   package_settings:
     author_name: Santiago Chacon, Daniela Molina, Tomas
-    author_email: chaconsantiago966@users.noreply.github.com
+    author_email: chaconsantiago966@gmail.com
     generated_timestamp: 1792936889
   control_xacro:
     command:

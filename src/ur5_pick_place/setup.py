@@ -20,7 +20,7 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='Santiago Chacón',
-    maintainer_email='chaconsantiago966@users.noreply.github.com',
+    maintainer_email='chaconsantiago966@gmail.com',
     description='Rutina Pick and Place simulada para UR5 + gripper',
     license='MIT',
     entry_points={
